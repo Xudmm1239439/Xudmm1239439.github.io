@@ -152,6 +152,178 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/04/25/Markdown/">Markdown</a>
+    </h1>
+  
+
+        
+        <a href="/2024/04/25/Markdown/" class="archive-article-date">
+  	<time datetime="2024-04-25T13:53:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Markdown的基本语法"><a href="#Markdown的基本语法" class="headerlink" title="Markdown的基本语法"></a>Markdown的基本语法</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br></pre></td></tr></table></figure>
+
+<p>效果如下</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h2 id="2-代码块"><a href="#2-代码块" class="headerlink" title="2.代码块"></a>2.代码块</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果是在一个代码块内需要引用代码，则在需要引用的代码块的前一行使用三个反引好```，同时在前一个反引号后写入代码语言</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-表格"><a href="#3-表格" class="headerlink" title="3.表格"></a>3.表格</h2><p>表格使用|来分割不同的单元格，使用-来分隔表头和其他行</p>
+<p>:-将表头级单元格内容左对齐</p>
+<p>-:将表头级单元格内容右对齐</p>
+<p>:-:将表头级单元格内容居中</p>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|项目|价格|数量|</span><br><span class="line">|---|--:|:--|</span><br><span class="line">|计算机|\$1600|5|</span><br><span class="line">|手机|  \$12|12|</span><br><span class="line">|管线|     \$1|234|</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="left">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="left">234</td>
+</tr>
+</tbody></table>
+<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h2><p>Markdown中插入链接的使用方法是：</p>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称]（链接地址）</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">即是：</span><br><span class="line">[这是虚无的猫咪的主页](https://xudmm1239439.github.io/)</span><br><span class="line">&lt;https://xudmm1239439.github.io/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://xudmm1239439.github.io/">这是虚无的猫咪的主页</a><br><a target="_blank" rel="noopener" href="https://xudmm1239439.github.io/">https://xudmm1239439.github.io/</a></p>
+<h2 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h2><p>Markdown中插入图片的使用方法是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片描述，可写可不写，但是中括号要有](图片地址，本地链接或者URL地址。)</span><br><span class="line">比如我此文章的图片：</span><br><span class="line">![虚无的猫咪]()</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/04/25/Markdown/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-I-O流的体系" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">I/O流的体系</a>
+    </h1>
+  
+
+        
+        <a href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/" class="archive-article-date">
+  	<time datetime="2024-04-25T13:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-idea使用技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,6 +347,7 @@
         <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Girl g=new Girl();</span><br><span class="line">Cat c=new Cat();</span><br><span class="line">g.play(c);</span><br></pre></td></tr></table></figure>
 
 <p>常用快捷键：<br>main方法快捷键：psvm+回车<br>控制台原样输出：sout+回车<br>删除一行：ctrl+y<br>复制一行：ctrl+d<br>单行注释：&#x2F;&#x2F;<br>多行注释：&#x2F;<em>+回车<br>文档注释：&#x2F;</em>* +回车</p>
+<p>再idea中选择内容然后按：ctrl+&#x2F;就可以将所选中的内容全部单行注释</p>
 <p>构造器的快速添加快捷键：alt+insert-》构造器-》选择属性<br>赋值与显示的快速添加快捷键：alt+insert-》Getter and Setter-》选择属性<br>按ctrl点击方法会进行跳转</p>
 
       
@@ -612,7 +785,7 @@ deploy:
 <p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
 <p>hexo c	#清理一下<br>hexo g	#生成<br>hexo d	#部署到远程Github仓库</p>
 <p><a target="_blank" rel="noopener" href="https://xudmm1239439.github.io/">虚无的猫咪的主页</a></p>
-<p><img src="C:\Users\走一回\AppData\Roaming\Typora\typora-user-images\image-20240419193944190.png" alt="虚无的猫咪"></p>
+<p>![虚无的猫咪](<a target="_blank" rel="noopener" href="https://xudmm.com/F:%5Csoftware%5Cphototypora-icon2.png">https://xudmm.com/F:%5Csoftware%5Cphototypora-icon2.png</a><br><a target="_blank" rel="noopener" href="https://xudmm.com/F:%5Csoftware%5Cphototypora-icon.png">https://xudmm.com/F:%5Csoftware%5Cphototypora-icon.png</a>)</p>
 <ul>
 <li><p><input disabled="" type="checkbox"> 
 完成状况   </p>
