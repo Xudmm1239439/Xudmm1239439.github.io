@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>read_technique | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="TPAMI TKDE  每周3 1摘要（背景，问题，解决方案） 2论文 3代码 问题对应问题的参考文献 文献综述（总结，优缺点） 相关工作（最初） 方法（论文的重点，基本的公式要了解，看不懂去自己解决b站，csdn）（理解核心思想） 实验看一下，别人怎么做的 记录对方法的总结（印证）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="read_technique">
+<meta property="og:url" content="http://example.com/2024/09/13/read-technique/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TPAMI TKDE  每周3 1摘要（背景，问题，解决方案） 2论文 3代码 问题对应问题的参考文献 文献综述（总结，优缺点） 相关工作（最初） 方法（论文的重点，基本的公式要了解，看不懂去自己解决b站，csdn）（理解核心思想） 实验看一下，别人怎么做的 记录对方法的总结（印证）">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\%E8%B5%B0%E4%B8%80%E5%9B%9E\AppData\Roaming\Typora\typora-user-images\image-20240913210252157.png">
+<meta property="article:published_time" content="2024-09-13T12:58:03.000Z">
+<meta property="article:modified_time" content="2024-09-13T15:00:57.028Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\%E8%B5%B0%E4%B8%80%E5%9B%9E\AppData\Roaming\Typora\typora-user-images\image-20240913210252157.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,203 +156,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-learning-note-summer-vacation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-read-technique" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/09/13/learning-note-summer-vacation/">learning_note_summer_vacation</a>
-    </h1>
-  
-
-        
-        <a href="/2024/09/13/learning-note-summer-vacation/" class="archive-article-date">
-  	<time datetime="2024-09-13T13:45:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-09-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>[1]从最简单的二分类标准神经网络模型（逻辑回归模型）（了解了神经网络的基本情况，知道正向传播和反向传播神经网络优化的基本流程）（了解了单样本loss function和m样本的cost function）,然后了解了最简单的浅层神经网络（单隐藏神经网络），然后深入了解了深层神经网络。然后了解了多分类的神经网络。<br>[2]同一类似，从简单到复杂，从单样本到多样本，从二分类到多样本，了解了CNN（卷积神经网络）<br>[3]同一类似，从简单到复杂，从单样本到多样本，从二分类到多样本，了解了RNN（循环神经网络）<br>并在其中学习了解了Python与向量化、优化深度神经网络、优化算法、深度学习实用层面、超参数调试、batch正则化、机器学习策略、CNN、目标检测等。</p>
-<h1 id="深度学习大纲"><a href="#深度学习大纲" class="headerlink" title="深度学习大纲"></a>深度学习大纲</h1><p>一、神经网络与深度学习</p>
-<p>1.深度学习概述</p>
-<p>了解了深度学习的简单概念（‘复杂’的神经网络）（1）</p>
-<p>然后就是什么是神经网络和神经元的概念（2）</p>
-<p>了解了SNN、CNN、RNN的基本模型格式（3）</p>
-<p>了解了深度学习的基本流程（5）</p>
-<p>2.神经网络基础之逻辑回归</p>
-<p>了解了二分类和逻辑回归模型（最简单的神经网络）（6-7）</p>
-<p>然后了解了逻辑回归模型的loss function(损失函数）（8）</p>
-<p>及逻辑回归模型对于m个样本的cost function（损失函数）（8）</p>
-<p>了解了梯度下降算法（9）</p>
-<p>了解了正向传播和方向传播（10）</p>
-<p>3.神经网络基础之Python与向量化</p>
-<p>介绍了向量化（利用矩阵运算的思想）（一种提高运算速度的方法）（11-12）</p>
-<p>还介绍了Python的广播机制（13）</p>
-<p>4.浅层神经网络</p>
-<p>在逻辑回归模型的基础上介绍浅层神经网络（比逻辑回归多一层（隐藏层、中间层））（单隐藏层神经网络是最典型的浅层神经网络）（14）</p>
-<p>介绍了不同的非线性的激活函数（15）</p>
-<p>5.深层神经网络</p>
-<p>在浅层神经网络的基础上介绍深层神经网络（深层神经就是包含更多的隐藏层的神经网络）（17）</p>
-<p>了解了超参数和参数（19）</p>
-<p>二、优化深度神经网络</p>
-<p>1.深度学习的实用层面</p>
-<p>了解了偏差（Bias）（欠拟合）和方差（Variance）（过拟合）的概念（21）</p>
-<p>并简绍了减少两种问题的解决方法</p>
-<p>【解决high Bias】（）（22）</p>
-<p>【解决high Variance】（正则化）（23）</p>
-<p>了解了dropout正则化（随机失活）（24）</p>
-<p>了解了early stopping（25）</p>
-<p>了解了标准化输入（26）</p>
-<p>了解了梯度爆炸和梯度消失的概念（27）</p>
-<p>了解了梯度检查（28）</p>
-<p>2.优化算法</p>
-<p>了解了mini-batch（分组运算）的概念和基本原则（29)</p>
-<p>了解了指数加权平均的一般形式和相关情况（30）</p>
-<p>了解了偏移校正（31）</p>
-<p>了解了动量梯度下降算法（比传统的梯度下降算法快）（32）</p>
-<p>了解了RMSprop（一种优化梯度下降算法）（33）</p>
-<p>以及32&#x2F;33相结合的Adam算法（34）</p>
-<p>了解了learing rate decy方法（35）</p>
-<p>3.超参数调试，Batch正则化和编程框架</p>
-<p>对超参数有了更加详细的了解（重要性和一般设置）（36）（37）</p>
-<p>了解了Batch正则化（38）（39）（40）</p>
-<p>了解了多分类回归模型（41）</p>
-<p>了解了一些深度学习框架</p>
-<p>三、构建机器学习项目</p>
-<p>1.机器学习策略</p>
-<p>更加深入的了解了各种改善深度学习模型的方法</p>
-<p>了解了单一数字评估指标策略（45）</p>
-<p>了解了满足和优化指标策略（46）</p>
-<p>了解了人类表现水准（47）</p>
-<p>更加深入了解了如何区分bias和Variance（多分布不一致的情况）（48）（51）（52）</p>
-<p>强调了错误分析（error analysis）的重要性（49）</p>
-<p>了解了incorrectly labeled example（50）</p>
-<p>了解了迁移学习（53）</p>
-<p>了解了多任务学习（54）</p>
-<p>了解了端到端深度学习（55）</p>
-<p>四、卷积神经网络CNN</p>
-<p>1.卷积神经网络基础</p>
-<p>了解了机器视觉（56）</p>
-<p>了解了边缘检测（57）</p>
-<p>了解了填充（58）</p>
-<p>了解了strided convolution（59）</p>
-<p>了解了过滤器filter（60）</p>
-<p>了解了最简单的神经网络结构（61）</p>
-<p>了解了pooling layers池层（62）</p>
-<p>了解了CNN对于SNN的优势（63）</p>
-<p>2.深度卷积模型：案例研究</p>
-<p>了解了Data Augmentation（数据增强）（70）</p>
-<p>了解了landmark Detection（地形检测）（71）</p>
-<p>3.目标检测</p>
-<p>详细了解了目标检测（object Detection）</p>
-<p>（一种简单方法是滑动窗算法）（73-74）</p>
-<p>一种解决滑动窗算法的问题的算法（YOLO算法（75-77）</p>
-<p>了解了多目标（78）</p>
-<p>4.人脸识别与神经风格迁移</p>
-<p>详细了解了人脸验证（79）</p>
-<p>了解了one shot learning（80）</p>
-<p>了解了相似函数（81）</p>
-<p>了解了Triplet loss（82）</p>
-<p>了解了神经风格迁移（84）</p>
-<p>了解了1D-3D卷积的规则（85）</p>
-<p>五、 序列模型</p>
-<p>1.循环神经网络RNN</p>
-<p>了解了序列模型的用途（86）</p>
-<p>了解了RNN的简单模型（87）</p>
-<p>了解了如何使用RNN构建语言模型（88）</p>
-<p>了解了RNNs的梯度消失与爆炸即解决方法GRU（89）</p>
-<p>了解了双向RNN（90）</p>
-<p>了解了深度RNNS（91）</p>
-<p>2.NLP和word Embeddings</p>
-<p>了解了featurized representaion（可以知道不同单词的相视程度）（92）</p>
-<p>了解了Enbedding matrix矩阵嵌入（93）</p>
-<p>了解了树形分类器（94）</p>
-<p>了解了负采样（Negative sampling）（95）</p>
-<p>了解了glove算法（96）</p>
-<p>了解了中立化（97）</p>
-<p>3.序列模型和注意力机制</p>
-<p>了解了序列模型（98）</p>
-<p>了解了贪婪搜索（99）</p>
-<p>了解了集束搜索（Beam search）（100）</p>
-<p>了解了注意力模型直觉（Attention model Intuition）（101）</p>
-<p>了解了CTCL（connectionist temporal classification）（102）</p>
-<p>了解了解发字检测（trigger wordDetection）（103）</p>
-<h1 id="近期总结"><a href="#近期总结" class="headerlink" title="近期总结"></a>近期总结</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p>1.1首先了解什么是深度学习然后引申了解了什么是神经网络，然后从监督学习入手，介绍了不同的神经网络类型，包括Standard NN，CNN和RNN。不同的神经网络模型适合处理不同类型的问题。对数据集本身来说，分为Structured Data和Unstructured Data。。最后明白了为什么要学习深度学习。最后，我们用一张对比图片解释了深度学习现在飞速发展、功能强大的原因。归纳其原因包含三点：Data，Computation和Algorithms。</p>
-<p>1.2以神经网络的基础（逻辑回归），出发了解了什么是二分类问题，以图片为例，将多维输入x转化为feature vector，接着，了解了逻辑回归及其对应的loss function和cost function，然后了解了梯度下降算法并了解了神经网络的正向传播和反向传播。最后，总结出最优化参数w和b的算法流程。</p>
-<p>1.3了解了神经网络基础（python和向量化）在深度学习程序中，使用向量化和矩阵运算的方法能够大大提高运行速度，节省时间。以逻辑回归为例，我们将其算法流程包括梯度下降转换为向量化的形式。同时，我们也介绍了python的相关编程方法和技巧。（广播机制）</p>
-<p>1.4了解了浅层神经网络，包括输入层，隐藏层和输出层，了解了其正向传播。接着，了解了不同的激活函数并做了比较，实际应用中根据不同需要选择合适的激活函数。激活函数必须是非线性的，不然神经网络模型起不了任何作用。然后，我们重点学习了神经网络的反向传播过程以及各个参数的导数推导，并以矩阵形式表示出来。最后，介绍了权重随机初始化的重要性，必须对权重W进行随机初始化操作。</p>
-<p>1.5首先，了解了建立神经网络模型一些常用的标准的标记符号。然后，学习了用流程块图的方式详细推导正向传播过程和反向传播过程的输入输出和参数表达式。并且也从提取特征复杂性和计算量的角度分别解释了深层神经网络为什么优于浅层神经网络。接着，了解了超参数的概念，了解了超参数与参数的区别。最后，学习了神经网络与人脑的区别类别，人工神经网络是简化的人脑模型。</p>
-<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p>1.1通过学习如何建立一个实用的深度学习神经网络。了解了包括Train&#x2F;Dev&#x2F;Test sets的比例选择，Bias和Variance的概念和区别：Bias对应欠拟合，Variance对应过拟合。接着，了解了防止过拟合的两种主要方法：L2 regularization和Dropout还有early stopping和增加数据集规模两种不够好的方法。然后，了解了规范化输入及其优点，加快梯度下降速度和精度。然后，了解梯度消失和梯度爆炸的概念和危害，并学习了如何使用梯度初始化来降低这种风险。最后，了解了梯度检查及其注意事项，其是用来验证梯度下降算法是否正确。</p>
-<p>1.2主要了解了深度神经网络的各种优化算法。包括对原始数据集进行分割，使用mini-batch gradient descent。然后了解了指数加权平均（Exponentially weighted averages）的概念以及偏移校正（bias correction）方法。接着，着重了解了三种常用的加速神经网络学习速度的三种算法：动量梯度下降、RMSprop和Adam算法。其中，Adam结合了动量梯度下降和RMSprop各自的优点，实际应用中表现更好。然后，了解了另外一种提高学习速度的方法：learning rate decay，通过不断减小学习因子，减小步进长度，来减小梯度振荡。最后，我们对深度学习中local optima的概念作了更深入的解释。</p>
-<p>1.3首先了解了超参数以及重要性差异，然后以此介绍了调试超参数的方法（均匀随机采样，非均匀随机采样（非刻度尺，将linear scale转换为log scale）），接下来介绍了调试超参数的模式（单模型还是多模型）。</p>
-<p>接下来了解了Bath Normalization方法研究公式（对第i层隐藏层的输入i-1层的输出进行归一化操作（可使各隐藏层输入的均值和方差为任意值）），了解了其的作用，然后介绍了单样本的特殊情况。</p>
-<p>接下来了解了softmax模型</p>
-<p>(softmax模型)逻辑回归模型的推广通过在<strong>输出层加入多个神经元</strong>，将单输出问题（二分类）映射到多输出问题（多分类）（预测正确值越小，loss function越大）<img src="C:\Users\走一回\AppData\Roaming\Typora\typora-user-images\image-20240914101518661.png" alt="image-20240914101518661">softmax的激活函数</p>
-<p>然后了解了一些深度学习框架</p>
-<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><p>1.1经过之前的学习，了解了许多改进深度学习的模型的方法，方法很多所以要选择性的选择，这就是机器学习策略的作用。</p>
-<p>学习了解了如（1）正交化Orthogonalization策略（2）单一数字评估指标策略（有公式）（3）满足和优化指标策略</p>
-<p>了解了人类表现水准的概念，并了解了贝叶斯误差，然后介绍了以贝叶斯误差、训练集误差、开发集误差3者之间的差距来确认偏差和方差。</p>
-<p>1.2了解了错误分析（error analysis）的重要性，利用错误分析找到主要问题，重点问题重点解决。</p>
-<p>对于可能存在的样本分布吧一致问题，了解学习的问题的确认和解决方案。</p>
-<p><img src="https://img-blog.csdn.net/20171123102507240" alt="img"></p>
-<p>了解了迁移学习的概念和多任务学习的概念</p>
-<p>了解了end-to-end，端到端（end-to-end）深度学习就是将所有不同阶段的数据处理系统或学习系统模块组合在一起，用一个单一的神经网络模型来实现所有的功能。它将所有模块混合在一起，只关心输入和输出。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/09/13/learning-note-summer-vacation/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-read-technique" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/09/13/read-technique/">read_technique</a>
+    <h1 class="article-title" itemprop="name">
+      read_technique
     </h1>
   
 
@@ -376,6 +193,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -383,16 +221,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/09/13/read-technique/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/09/13/read-technique/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2024/09/13/learning-note-summer-vacation/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          learning_note_summer_vacation
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/09/12/deep-learning-notes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">deep learning notes</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -412,582 +318,14 @@
 
 
 
-
-  
-    <article id="post-deep-learning-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/09/12/deep-learning-notes/">deep learning notes</a>
-    </h1>
-  
-
-        
-        <a href="/2024/09/12/deep-learning-notes/" class="archive-article-date">
-  	<time datetime="2024-09-12T06:20:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-09-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/09/12/deep-learning-notes/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-常见的邮箱" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/14/%E5%B8%B8%E8%A7%81%E7%9A%84%E9%82%AE%E7%AE%B1/">常见的邮箱</a>
-    </h1>
-  
-
-        
-        <a href="/2024/05/14/%E5%B8%B8%E8%A7%81%E7%9A%84%E9%82%AE%E7%AE%B1/" class="archive-article-date">
-  	<time datetime="2024-05-14T04:29:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/BbTni">参考csdn链接</a></p>
-<p>为什么需要这么多邮箱帐户呢？简而言之，个人安全与隐私的需要。具体就不去讨论了，直奔主题了解一下4个邮箱账户的用途。</p>
-<p>第一个，主要用于银行和金融等比较敏感的账户。<br>直白一点就是跟钱相关的，我个人是使用的腾讯企业邮箱，与微信绑定能即时收到邮件通知，而且在国内很少会有收不到银行邮件的问题。但无论你是使用腾讯还是网易，为了账户的安全一定要开通两步验证。</p>
-<p>第二个，只用于个人通信，包括家人和朋友等。<br>但咱中国人家人和朋友之间交流主要还是微信，可根据自己的实际情况把范围扩大一些，如网友之类的。我个人使用的是自己的域名邮箱，域名为个人名字的全拼，好记。</p>
-<p>第三个，用于其它网站注册。<br>主要用于接收优惠信息、网站用户验证以及垃圾邮件。</p>
-<p>第四个，用于与政府部分通信。</p>
-<p>以上4个帐户的分类及使用仅供参考，毕竟国情不同，但邮箱账户专户专用还是值得提倡的。</p>
-<p>下面是整理的一些免费邮箱：</p>
-<p>国内邮箱<br>QQ.com: <a target="_blank" rel="noopener" href="https://mail.qq.com/">https://mail.qq.com/</a><br>163.com: <a target="_blank" rel="noopener" href="http://mail.163.com/">http://mail.163.com/</a><br>Aliyun.com: <a target="_blank" rel="noopener" href="https://mail.aliyun.com/">https://mail.aliyun.com/</a><br>21CN.com: <a target="_blank" rel="noopener" href="http://mail.21cn.com/w2/">http://mail.21cn.com/w2/</a><br>完美邮箱: <a target="_blank" rel="noopener" href="https://www.88.com/">https://www.88.com/</a> · <a target="_blank" rel="noopener" href="https://www.111.com/">https://www.111.com/</a><br>国外邮箱<br>Outlook.com: <a target="_blank" rel="noopener" href="https://outlook.live.com/">https://outlook.live.com/</a><br>Gmail.com: <a target="_blank" rel="noopener" href="https://www.google.com/gmail/">https://www.google.com/gmail/</a><br>Zoho.com: <a target="_blank" rel="noopener" href="https://www.zoho.com/mail/">https://www.zoho.com/mail/</a><br>Yandex.com: <a target="_blank" rel="noopener" href="https://mail.yandex.com/">https://mail.yandex.com/</a><br>AOL.com: <a target="_blank" rel="noopener" href="https://mail.aol.com/">https://mail.aol.com/</a><br>Yahoo.com: <a target="_blank" rel="noopener" href="https://mail.yahoo.com/">https://mail.yahoo.com</a><br>Mail.com: <a target="_blank" rel="noopener" href="https://www.mail.com/int/">https://www.mail.com/int/</a><br>GMX.com: <a target="_blank" rel="noopener" href="https://www.gmx.com/">https://www.gmx.com/</a><br>加密邮箱<br>Protonmail.com: <a target="_blank" rel="noopener" href="https://protonmail.com/">https://protonmail.com/</a><br>Tutanota.com: <a target="_blank" rel="noopener" href="https://tutanota.com/">https://tutanota.com/</a><br>Mailfence.com: <a target="_blank" rel="noopener" href="https://mailfence.com/">https://mailfence.com/</a><br>Disroot.org: <a target="_blank" rel="noopener" href="https://disroot.org/">https://disroot.org</a><br>Riseup.net: <a target="_blank" rel="noopener" href="https://riseup.net/">https://riseup.net/</a><br>A&#x2F;I: <a target="_blank" rel="noopener" href="https://www.autistici.org/">https://www.autistici.org/</a><br>Vivaldi.net: <a target="_blank" rel="noopener" href="https://webmail.vivaldi.net/">https://webmail.vivaldi.net/</a><br>Cock.li: <a target="_blank" rel="noopener" href="https://cock.li/">https://cock.li/</a><br>Criptext.com: <a target="_blank" rel="noopener" href="https://www.criptext.com/">https://www.criptext.com/</a><br>CTemplar.com: <a target="_blank" rel="noopener" href="https://ctemplar.com/">https://ctemplar.com/</a><br>Msgsafe.io: <a target="_blank" rel="noopener" href="https://www.msgsafe.io/">https://www.msgsafe.io/</a><br>Mailo: <a target="_blank" rel="noopener" href="https://www.mailo.com/">https://www.mailo.com</a><br>Paranoid.email: <a target="_blank" rel="noopener" href="https://paranoid.email/">https://paranoid.email/</a><br>临时邮箱<br>GuerrillaMail.com: <a target="_blank" rel="noopener" href="https://www.guerrillamail.com/zh/inbox">https://www.guerrillamail.com/zh/inbox</a><br>CS.email: <a target="_blank" rel="noopener" href="https://www.cs.email/">https://www.cs.email/</a><br>Moaktmail: <a target="_blank" rel="noopener" href="https://www.moakt.com/zh">https://www.moakt.com/zh</a></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/14/%E5%B8%B8%E8%A7%81%E7%9A%84%E9%82%AE%E7%AE%B1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-vMware安装教材" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/02/vMware%E5%AE%89%E8%A3%85%E6%95%99%E6%9D%90/">vMware安装教材</a>
-    </h1>
-  
-
-        
-        <a href="/2024/05/02/vMware%E5%AE%89%E8%A3%85%E6%95%99%E6%9D%90/" class="archive-article-date">
-  	<time datetime="2024-05-02T05:52:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="vmware教程链接"><a href="#vmware教程链接" class="headerlink" title="vmware教程链接"></a>vmware教程链接</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/KMDcs">保姆级教程链接</a></p>
-<h3 id="码"><a href="#码" class="headerlink" title="码"></a>码</h3><p>YF39K-DLFE5-H856Z-6NWZE-XQ2XD</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/02/vMware%E5%AE%89%E8%A3%85%E6%95%99%E6%9D%90/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/25/Markdown/">Markdown</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/25/Markdown/" class="archive-article-date">
-  	<time datetime="2024-04-25T13:53:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Markdown的基本语法"><a href="#Markdown的基本语法" class="headerlink" title="Markdown的基本语法"></a>Markdown的基本语法</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br></pre></td></tr></table></figure>
-
-<p>效果如下</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h2 id="2-代码块"><a href="#2-代码块" class="headerlink" title="2.代码块"></a>2.代码块</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果是在一个代码块内需要引用代码，则在需要引用的代码块的前一行使用三个反引好```，同时在前一个反引号后写入代码语言</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="3-表格"><a href="#3-表格" class="headerlink" title="3.表格"></a>3.表格</h2><p>表格使用|来分割不同的单元格，使用-来分隔表头和其他行</p>
-<p>:-将表头级单元格内容左对齐</p>
-<p>-:将表头级单元格内容右对齐</p>
-<p>:-:将表头级单元格内容居中</p>
-<p>代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|项目|价格|数量|</span><br><span class="line">|---|--:|:--|</span><br><span class="line">|计算机|\$1600|5|</span><br><span class="line">|手机|  \$12|12|</span><br><span class="line">|管线|     \$1|234|</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th align="right">价格</th>
-<th align="left">数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>计算机</td>
-<td align="right">$1600</td>
-<td align="left">5</td>
-</tr>
-<tr>
-<td>手机</td>
-<td align="right">$12</td>
-<td align="left">12</td>
-</tr>
-<tr>
-<td>管线</td>
-<td align="right">$1</td>
-<td align="left">234</td>
-</tr>
-</tbody></table>
-<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h2><p>Markdown中插入链接的使用方法是：</p>
-<p>代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称]（链接地址）</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">即是：</span><br><span class="line">[这是虚无的猫咪的主页](https://xudmm1239439.github.io/)</span><br><span class="line">&lt;https://xudmm1239439.github.io/&gt;</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://xudmm1239439.github.io/">这是虚无的猫咪的主页</a><br><a target="_blank" rel="noopener" href="https://xudmm1239439.github.io/">https://xudmm1239439.github.io/</a></p>
-<h2 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h2><p>Markdown中插入图片的使用方法是：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片描述，可写可不写，但是中括号要有](图片地址，本地链接或者URL地址。)</span><br><span class="line">比如我此文章的图片：</span><br><span class="line">![虚无的猫咪](https://raw.githubusercontent.com/Xudmm1239439/Xudmm1239439.github.io/master/test202404260127386.png)</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/Xudmm1239439/Xudmm1239439.github.io/master/test202404260127386.png" alt="虚无的猫咪"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/25/Markdown/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-I-O流的体系" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">I/O流的体系</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/" class="archive-article-date">
-  	<time datetime="2024-04-25T13:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-idea使用技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">idea使用技巧</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="archive-article-date">
-  	<time datetime="2024-04-23T13:42:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Girl g=new Girl();</span><br><span class="line">Cat c=new Cat();</span><br><span class="line">g.play(c);</span><br></pre></td></tr></table></figure>
-
-<p>常用快捷键：<br>main方法快捷键：psvm+回车<br>控制台原样输出：sout+回车<br>删除一行：ctrl+y<br>复制一行：ctrl+d<br>单行注释：&#x2F;&#x2F;<br>多行注释：&#x2F;<em>+回车<br>文档注释：&#x2F;</em>* +回车</p>
-<p>再idea中选择内容然后按：ctrl+&#x2F;就可以将所选中的内容全部单行注释</p>
-<p>构造器的快速添加快捷键：alt+insert-》构造器-》选择属性<br>赋值与显示的快速添加快捷键：alt+insert-》Getter and Setter-》选择属性<br>按ctrl点击方法会进行跳转</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexoquestion" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/19/hexoquestion/">hexoquestion</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/19/hexoquestion/" class="archive-article-date">
-  	<time datetime="2024-04-19T14:44:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo出现的问题"><a href="#hexo出现的问题" class="headerlink" title="hexo出现的问题"></a>hexo出现的问题</h1><p>1 **Spawn failed at ChildProcess.&lt;anonymous**&gt; </p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/V9Juu">解决链接</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/19/hexoquestion/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-surroundings" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/19/surroundings/">surroundings</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/19/surroundings/" class="archive-article-date">
-  	<time datetime="2024-04-19T14:11:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="各种工作环境安装配置使用链接"><a href="#各种工作环境安装配置使用链接" class="headerlink" title="各种工作环境安装配置使用链接"></a>各种工作环境安装配置使用链接</h1><h2 id="idea及其相关"><a href="#idea及其相关" class="headerlink" title="idea及其相关"></a>idea及其相关</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea"></a>idea</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/niIZK">2020idea的下载、安装、配置与使用</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/hePAv">jdk11 下载与安装、环境配置</a></p>
-<h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/BeTN7">mysql基本操作详解</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/NSoN9">使用IDEA连接Mysql数据库</a></p>
-<h3 id="Navicat"><a href="#Navicat" class="headerlink" title="Navicat"></a>Navicat</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/YRWnh">Navicat安装和激活详细讲解</a></p>
-<h2 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h2><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/W4AJ4">Eclipse从安装、配置、使用、到常见问题以及常用快捷键</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/ulIMW">Eclipse使用入门</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/19/surroundings/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -1010,8 +348,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
