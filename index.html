@@ -152,6 +152,652 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-key" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://i-blog.csdnimg.cn/blog_migrate/f65141f3a276fe7991eb2a0297d67dc6.png" alt="img"></p>
+<ul>
+<li>1.注释和取消注释</li>
+</ul>
+<p>注释的话前面加“ &#x2F;&#x2F; ”，取消注释择删掉“ &#x2F;&#x2F; ”</p>
+<h5 id="1-KeyPress-按键"><a href="#1-KeyPress-按键" class="headerlink" title="1.KeyPress 按键"></a>1.KeyPress 按键</h5><p>KeyPress 键盘虚拟码,次数	</p>
+<p>&#x2F;&#x2F;举例：</p>
+<p>KeyPress 87,1<br>&#x2F;&#x2F;87是W键的按键码，上面的语句表示按W键1次   </p>
+<p>KeyPress “W”,1<br>&#x2F;&#x2F;上面的支持按键字符，语句表示按W键1次 </p>
+<h5 id="KeyDown-按下-和-KeyUp-弹起（松开按键）"><a href="#KeyDown-按下-和-KeyUp-弹起（松开按键）" class="headerlink" title="KeyDown 按下 和 KeyUp 弹起（松开按键）"></a>KeyDown 按下 和 KeyUp 弹起（松开按键）</h5><h5 id="3-WaitKey-等待按任意键"><a href="#3-WaitKey-等待按任意键" class="headerlink" title="3.WaitKey 等待按任意键"></a>3.WaitKey 等待按任意键</h5><p>Key&#x3D;WaitKey()<br>&#x2F;&#x2F;脚本运行到这一行会暂停,当用户按下键盘后继续执行,并且把用户的按键码保存在变量Key里</p>
+<h5 id="1-抓图定位"><a href="#1-抓图定位" class="headerlink" title="1.抓图定位"></a>1.抓图定位</h5><p>首先点击抓抓，出现弹窗，将鼠标放在“猫咪.jpg”上，“ctrl + alt + 1” 图片的坐标和颜色就会显示在对应的位置</p>
+<h5 id="2-MoveTo-鼠标移动"><a href="#2-MoveTo-鼠标移动" class="headerlink" title="2.MoveTo 鼠标移动"></a>2.MoveTo <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8&spm=1001.2101.3001.7020">鼠标移动</a></h5><ul>
+<li>简介<br>intX&#x3D;50<br>intY&#x3D;150<br>MoveTo intX,intY</li>
+</ul>
+<h5 id="2-LeftDown-左键按下，LeftUp左键弹起，RightClick右键点击，LeftClick-左键点击"><a href="#2-LeftDown-左键按下，LeftUp左键弹起，RightClick右键点击，LeftClick-左键点击" class="headerlink" title="2.LeftDown 左键按下，LeftUp左键弹起，RightClick右键点击，LeftClick 左键点击"></a>2.LeftDown 左键按下，LeftUp左键弹起，RightClick右键点击，LeftClick 左键点击</h5><ul>
+<li>简介<br>LeftDown 次数<br>LeftUp 次数<br>RightClick 次数<br>LeftClick 次数</li>
+</ul>
+<h5 id="3-MouseWheel-鼠标滚动，WaitClick按任意鼠标键继续"><a href="#3-MouseWheel-鼠标滚动，WaitClick按任意鼠标键继续" class="headerlink" title="3.MouseWheel 鼠标滚动，WaitClick按任意鼠标键继续"></a>3.MouseWheel 鼠标滚动，WaitClick按任意鼠标键继续</h5><ul>
+<li>简介<br>MouseWheel 1<br>&#x2F;&#x2F;把鼠标滚轮向上滚动1格<br>key&#x3D;WaitClick()<br>&#x2F;&#x2F;鼠标点击后，返回变量给key，key存了你点的鼠标键</li>
+</ul>
+<h4 id="1-Delay-延时"><a href="#1-Delay-延时" class="headerlink" title="1. Delay 延时"></a>1. Delay 延时</h4><ul>
+<li><p>简介<br>&#x2F;&#x2F;1秒＝1000毫秒, 1分钟＝60000毫秒, 1小时＝3600000毫秒<br>Delay 6000<br>&#x2F;&#x2F;延迟6秒<br>&#x2F;&#x2F;<br>x &#x3D; 5000<br>Delay x<br>&#x2F;&#x2F;延时x秒，这里x是5秒</p>
+</li>
+<li><p>让运行的脚本停顿一定的时间</p>
+<h4 id="2-SayString"><a href="#2-SayString" class="headerlink" title="2. SayString"></a>2. SayString</h4><ul>
+<li>简介<br>&#x2F;&#x2F;第一种写法<br>SayString “你好啊”<br>&#x2F;&#x2F;<br>&#x2F;&#x2F;第二种写法<br>x &#x3D; “我很好”<br>SayString x</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-MessageBox-弹出对话框"><a href="#3-MessageBox-弹出对话框" class="headerlink" title="3. MessageBox 弹出对话框"></a>3. <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=MessageBox&spm=1001.2101.3001.7020">MessageBox</a> 弹出对话框</h4><ul>
+<li>简介<br>&#x2F;&#x2F;第一种写法<br>MessageBox “<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%BC%B9%E5%87%BA%E7%AA%97%E5%8F%A3&spm=1001.2101.3001.7020">弹出窗口</a>”<br>&#x2F;&#x2F;第二种写法<br>x &#x3D; “提醒窗口”<br>MessageBox x</li>
+</ul>
+<h4 id="4-RunApp-运行"><a href="#4-RunApp-运行" class="headerlink" title="4.RunApp 运行"></a>4.RunApp 运行</h4><ul>
+<li><p>简介<br>RunApp “notepad.exe”<br>&#x2F;&#x2F;启动Windows记事本程序</p>
+</li>
+<li><p>要启动什么程序，写入即可</p>
+<h4 id="5-TracePrint-调试输出"><a href="#5-TracePrint-调试输出" class="headerlink" title="5.TracePrint 调试输出"></a>5.TracePrint 调试输出</h4><ul>
+<li>简介<br>x&#x3D;100<br>&#x2F;&#x2F;可用于输出变量的值<br>TracePrint x<br>&#x2F;&#x2F;在调试窗口输出变量x的值</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-IfColor-颜色判断"><a href="#1-IfColor-颜色判断" class="headerlink" title="1.IfColor 颜色判断"></a>1.IfColor 颜色判断</h4><p>&#x2F;&#x2F;判断条件(0:等于 1:不等于 2:近似等于)<br>&#x2F;&#x2F;参数说明：x坐标，y坐标，颜色，条件		</p>
+<p>IfColor 860,27,”e1b072”,0  Then  </p>
+<pre><code>Msgbox &quot;颜色等于&quot;  
+</code></pre>
+<p>Else    </p>
+<pre><code>Msgbox &quot;颜色不等于&quot;  
+</code></pre>
+<p>End If<br>&#x2F;&#x2F;判断坐标点(860,27)的颜色是否等于e1b072   </p>
+<h4 id="2-If-判断命令"><a href="#2-If-判断命令" class="headerlink" title="2.If 判断命令"></a>2.If 判断命令</h4><p>age &#x3D; “1”<br>If age &#x3D; “1” Then </p>
+<pre><code>TracePrint &quot;性别：男&quot;
+</code></pre>
+<p>End If </p>
+<h4 id="3-Select-Case-情况条件选择"><a href="#3-Select-Case-情况条件选择" class="headerlink" title="3.Select Case 情况条件选择"></a>3.Select Case 情况条件选择</h4><p>&#x2F;&#x2F;不支持判断语句 如：Case a&gt;0 , 这里在告诉你要输入的内容范围<br>UserVar 变量&#x3D;4 “输入（0~9）数字”  </p>
+<p>&#x2F;&#x2F;以下是选择条件结结构判断<br>&#x2F;&#x2F;传入的变量往下走进行判断<br>Select Case 变量<br>&#x2F;&#x2F;这里的Case 0  ——&gt; 就相当于如果传过来的变量值为 0 则打印；最后跳出<br>Case 0<br>    TracePrint “你输入的数字为：0”<br>Case 1<br>    TracePrint “你输入的数字为：1”<br>Case 2<br>    TracePrint “你输入的数字为：2”<br>Case 3<br>    TracePrint “你输入的数字为：3”<br>Case 4<br>    TracePrint “你输入的数字为：4”<br>Case 5<br>    TracePrint “你输入的数字为：5”<br>Case 6<br>    TracePrint “你输入的数字为：6”<br>Case 7<br>    TracePrint “你输入的数字为：7”<br>Case 8<br>    TracePrint “你输入的数字为：8”<br>Case 9<br>    TracePrint “你输入的数字为：9”<br>&#x2F;&#x2F;剩下的条件，输入的值不在0<del>9中<br>Case Else<br>    TracePrint “你输入的数字不正确，请输入（0</del>9）数字！”<br>End Select  </p>
+<h4 id="4-For-循环"><a href="#4-For-循环" class="headerlink" title="4.For 循环"></a>4.For 循环</h4><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">例子<span class="number">1</span>：</span><br><span class="line"><span class="operator">//</span>从<span class="number">0</span>到<span class="number">9</span>循环，到<span class="number">9</span>后停止 </span><br><span class="line"><span class="built_in">For</span> <span class="variable">i</span><span class="operator">=</span><span class="number">0</span> <span class="variable">To</span> <span class="number">9</span>   </span><br><span class="line">    <span class="built_in">TracePrint</span> <span class="string">&quot;打印内容：&quot;</span><span class="operator">&amp;</span> <span class="variable">i</span></span><br><span class="line"><span class="built_in">Next</span>  </span><br></pre></td></tr></table></figure>
+
+<h4 id="5-While-如果…则循环"><a href="#5-While-如果…则循环" class="headerlink" title="5.While 如果…则循环"></a>5.While 如果…则循环</h4><p>i &#x3D; 1<br>&#x2F;&#x2F;当 i 不等于 10的，反复执行循环   ;当 i等于10退出循环<br>While i&lt;&gt;10<br>    TracePrint “我抄了第” &amp; i &amp; “份作业”<br>    &#x2F;&#x2F;每过一次加1<br>    i &#x3D; i+1<br>Wend</p>
+<h4 id="6-Do-While-Until-循环"><a href="#6-Do-While-Until-循环" class="headerlink" title="6.Do While &#x2F;Until 循环"></a>6.Do While &#x2F;Until 循环</h4><p>&#x2F;&#x2F;例子4：<br>n &#x3D; 0<br>&#x2F;&#x2F;符合条件，循环执行<br>Do While true</p>
+<pre><code>TracePrint &quot;我循环了第&quot; &amp; n &amp; &quot;次&quot;
+
+//如果n大于10
+If n &gt;= 10 Then 
+
+    //当循环条件成立的时候，离开循环体   
+    Exit Do
+    
+End If
+
+//每循环一次加1
+n=n+1   
+</code></pre>
+<p>Loop  </p>
+<h4 id="7-Goto-跳转到标记"><a href="#7-Goto-跳转到标记" class="headerlink" title="7. Goto 跳转到标记"></a>7. Goto 跳转到标记</h4><p>Goto 标记<br>TracePrint “Hello 精灵”<br>Rem 标记<br>Msgbox “你直接跳到这里了!!,上面的打印没有被执行!!”</p>
+<h4 id="8-Call-调用过程，Sub-子程序"><a href="#8-Call-调用过程，Sub-子程序" class="headerlink" title="8.Call 调用过程，Sub 子程序"></a>8.Call 调用过程，Sub 子程序</h4><p>&#x2F;&#x2F;调用MyMethod<br>Call MyMethod(“我是子程序,被你调用了”)</p>
+<p>&#x2F;&#x2F;支持中文名变量 ,方法（参数）<br>Sub MyMethod(text)<br>    &#x2F;&#x2F;打印传入的参数<br>    TracePrint text<br>End Sub<br>&#x2F;&#x2F;定义一个过程,可以在脚本中调用这个过程 </p>
+<h4 id="9-Function-函数"><a href="#9-Function-函数" class="headerlink" title="9. Function 函数"></a>9. Function 函数</h4><p>&#x2F;&#x2F;支持Exit Function 命令退出函数过程 </p>
+<p>&#x2F;&#x2F;定义参数<br>param &#x3D; “我是函数,被你调用了”</p>
+<p>&#x2F;&#x2F;调用函数  （参数）<br>Call 函数过程(param)</p>
+<pre><code>//调用函数返回内容text
+text = 函数过程(param)
+ 
+//打印返回值text
+TracePrint text
+</code></pre>
+<p>EndScript</p>
+<p>&#x2F;&#x2F;定义函数（参数）<br>Function 函数过程(a)</p>
+<pre><code> //将a值给了函数过程
+ 函数过程 = a
+</code></pre>
+<p>End Function<br>&#x2F;&#x2F;定义一个函数过程,可以在脚本中调用这个函数  </p>
+<h4 id="1-GetPixelColor-得到指定点颜色"><a href="#1-GetPixelColor-得到指定点颜色" class="headerlink" title="1.GetPixelColor 得到指定点颜色"></a>1.GetPixelColor 得到指定点颜色</h4><p>&#x2F;&#x2F;获取鼠标位置<br>GetCursorPos a, b</p>
+<p>&#x2F;&#x2F;得到鼠标位置的颜色<br>cr1 &#x3D; GetPixelColor(a, b)</p>
+<p>&#x2F;&#x2F;打印颜色<br>TracePrint cr1<br>&#x2F;&#x2F;得到当前点的颜色，并弹出对话框显示出来</p>
+<h4 id="2-FindColor-找色，FindCenterColor-中心找色"><a href="#2-FindColor-找色，FindCenterColor-中心找色" class="headerlink" title="2.FindColor 找色，FindCenterColor 中心找色"></a>2.FindColor 找色，FindCenterColor 中心找色</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这两个命令用法一致，只不过他们在页面找颜色的方式不同；FindColor 是左到右、上到下，FindCenterColor 是从中心到外围找色</span><br></pre></td></tr></table></figure>
+
+<p>参数1 整数型，屏幕左上角x坐标<br>参数2 整数型，屏幕左上角y坐标<br>参数3 整数型，屏幕右下角x坐标<br>参数4 整数型，屏幕右下角y坐标<br>参数5 字符串型，16进制颜色值<br>参数6 整数型，返回x坐标<br>参数7 整数型，返回y坐标</p>
+<p>&#x2F;&#x2F;颜色是类似于”5C9DD6”的字符串，如果不取变量，别忘了加双引号<br>&#x2F;&#x2F;如果没有找到这个颜色，则x和y的值都被置为-1<br>FindColor 0, 0, 1920, 1080, “5C9DD6”, x, y</p>
+<p>If x &gt; 0 and y &gt; 0 Then </p>
+<pre><code>MoveTo x, y
+</code></pre>
+<p>End If<br>&#x2F;&#x2F;在区域(0,0,800,600)中找红色（”0000FF”）的点，如果找到，则把鼠标移动到这个点</p>
+<h4 id="3-FindColorEx-模糊找色"><a href="#3-FindColorEx-模糊找色" class="headerlink" title="3.FindColorEx 模糊找色"></a>3.FindColorEx 模糊找色</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">模糊找色和 FindColor 找色 的区别就是找颜色相似度值，准确性降低，主要用于页面颜色不好确定的，不太清楚的情况，用法是一样的，只不过参数有些许有点不同</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F;FindColorEx left,top,right,bottom,c,type,similar,x,y  </p>
+<p>&#x2F;&#x2F;left,top,right,bottom都是整数或者整数型变量，说明了区域的左，上，右，下界限  </p>
+<p>&#x2F;&#x2F;颜色是类似于”0000FF”的字符串，如果不取变量，别忘了加双引号  </p>
+<p>&#x2F;&#x2F;type表示查找方式。0为从上往下，从左往右找；1为从中心往外围找  </p>
+<p>&#x2F;&#x2F;similar为相似度，取0.3到1之间的小数。数值越大，对相似度要求越严格。推荐取0.8 </p>
+<p>&#x2F;&#x2F;如果没有找到这个颜色，则x和y的值都被置为-1<br>FindColorEx 0, 0, 1920, 1080, “5C9DD6”, 1, 0.8, x, y</p>
+<p>If x &gt; 0 and y &gt; 0 Then </p>
+<pre><code>TracePrint x &amp; &quot;,&quot; &amp; y
+
+MoveTo x, y
+</code></pre>
+<p>End If </p>
+<h4 id="4-FindPic-找图"><a href="#4-FindPic-找图" class="headerlink" title="4.FindPic 找图"></a>4.FindPic 找图</h4><p>&#x2F;&#x2F;FindPic left,top,right,bottom,filename,similar,x,y   </p>
+<p>&#x2F;&#x2F;在区域内从左到右，从上到下找文件名为filename的bmp文件，把找到的坐标保存在变量x和y中 </p>
+<p>&#x2F;&#x2F;left,top,right,bottom都是整数或者整数型变量，说明了区域的左，上，右，下界限   </p>
+<p>&#x2F;&#x2F;filename是一个bmp格式的图片，需要您自己抓取，最好是24位，把边缘都设为单一的颜色 </p>
+<p>&#x2F;&#x2F;similar为相似度，取0.5到1之间的小数。数值越大，对图片的相似度要求越严格，速度也越快。推荐取0.9  </p>
+<p>&#x2F;&#x2F;如果没有找到图片，则x和y的值都被置为-1  </p>
+<p>&#x2F;&#x2F;推荐使用周围颜色单一的图片   </p>
+<p>FindPic 0, 0, 1024,768, “Attachment:\按键.bmp”, 0.9, intX, intY</p>
+<p>If intX &gt; 0 and intY &gt; 0 Then </p>
+<pre><code>MoveTo intX, intY
+</code></pre>
+<p>   TracePrint “找到了 头像”</p>
+<p>Else<br>    MessageBox “没找到头像”<br>End If<br>&#x2F;&#x2F;在区域(0, 0, 1024,768)中找与文件按键.bmp中的图形比较接近的地方，如果找到，则把鼠标移动到这个地方  </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/10/10/key/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-pycharm-technique" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="三、Pycharm基本设置"><a href="#三、Pycharm基本设置" class="headerlink" title="三、Pycharm基本设置"></a>三、Pycharm基本设置</h3><h5 id="1、创建项目"><a href="#1、创建项目" class="headerlink" title="1、创建项目"></a>1、创建项目</h5><ol>
+<li>Pycharm首页点击<code>New Project</code>进入新建项目页面。</li>
+</ol>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/d81db97a0acf625c9477b2f0a347cbb7.png" alt="image-20240420230733185"></p>
+<p>   2.新建Python项目：</p>
+<ul>
+<li><code>Name</code>：项目名。输入<code>demo</code>。</li>
+<li><code>Location</code>：项目位置。选择Python项目位置，记得路径最后添加<code>\</code>。</li>
+<li><code>Python version</code>：Python环境版本。选择电脑中<code>python.exe</code>位置。</li>
+</ul>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/5cb86181d8ee966ae299d03f5890ecce.png" alt="image-20240420230846459"></p>
+<p> 3.新建成功。</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/363884755788a226746d1f3889b59e4a.png" alt="image-20240420231414836"></p>
+<h5 id="2、Pycharm基本设置"><a href="#2、Pycharm基本设置" class="headerlink" title="2、Pycharm基本设置"></a>2、Pycharm基本设置</h5><ol>
+<li>进入Pycharm设置页面：点击<code>File</code>下拉框中的<code>Settings</code>，进入设置页面。</li>
+</ol>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/d8bf9939751a885e91bde8b1657da59b.png" alt="image-20240420231514541"></p>
+<p>2.文件编码设置：Pycharm设置左上角的搜索框中搜索<code>utf</code>，再点击<code>File Encodings</code>，进入文件编码设置页面。</p>
+<ul>
+<li><code>Project Encoding</code>：项目编码选择<code>UTF-8</code>。</li>
+<li><code>Default encoding for properties files</code>：配置文件编码选择<code>UTF-8</code>。</li>
+</ul>
+<p>点击<code>Apply</code>保存刚刚的设置。</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/9a8b66aaa96a10406d97fdc0c12a258a.png" alt="image-20240420232144648"></p>
+<p>3.代码字体设置：Pycharm设置左上角的搜索框中搜索<code>font</code>，再点击<code>Font</code>，进入代码字体设置页面。</p>
+<p>​     Size&#96;：代码大小设置为16，可以较为舒服的显示代码。根据个人喜好自行设置。</p>
+<p>点击<code>OK</code>保存刚刚的设置并关闭设置弹窗。</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/51e42d3228376a5555a67355445a2727.png" alt="image-20240420233133667"></p>
+<p>4.Pycharm基本设置完成后，显示代码的页面。</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/ec63f684dc860b9cb46fbe4546262c14.png" alt="image-20240420233804487"></p>
+<p>5.pycharm主题颜色切换：进入设置页面，点击Apperance &amp; Behavior 中的 Appearance 。<br>Theme：点击右侧下拉框，选择弹窗中的主题，如Light是白色主题，根据喜好选择。</p>
+<p>点击<code>OK</code>保存刚刚的设置并关闭设置弹窗。</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/ce89aea0113cdea73926ee480269ebf9.png" alt="image-20240519214304110"></p>
+<h5 id="3、Pycharm常用快捷键"><a href="#3、Pycharm常用快捷键" class="headerlink" title="3、Pycharm常用快捷键"></a>3、Pycharm常用快捷键</h5><ol>
+<li>常用快捷键</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shift + Delete</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl + D</td>
+<td>复制当前行</td>
+</tr>
+<tr>
+<td>Ctrl + &#x2F;</td>
+<td>添加&#x2F;删除 所选行注释</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + L</td>
+<td>格式化代码</td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>查看类的层级关系</td>
+</tr>
+<tr>
+<td>Ctrl + F</td>
+<td>查找</td>
+</tr>
+<tr>
+<td>Ctrl + R</td>
+<td>替换</td>
+</tr>
+</tbody></table>
+<ol>
+<li>更改快捷键</li>
+</ol>
+<blockquote>
+<p>如何更改默认的快捷键，或者添加快捷键（举例：给运行代码的Run，添加Alt + R快捷键）</p>
+</blockquote>
+<p>打开Pycharm设置页面，点击Keymap进入快捷键设置页面<br>搜索框中搜索run，下拉列表，找到我们需要修改的快捷键，即“Shift+F10”这行的Run<br>右键选择Add Keyboard Shortcut去添加快捷键，同时按下Alt键和R键会自动输入触发Run的快捷键名称，点击OK保存<br>添加成功后，可以看到Run这行的右侧多了Alt + R，再点击Ok就可以保存设置去使用<br><img src="https://i-blog.csdnimg.cn/blog_migrate/48cd99fb01dabf949ceb8ebf305cdc81.png" alt="image-20240519220103087"></p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/48cd99fb01dabf949ceb8ebf305cdc81.png" alt="image-20240519220103087"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/09/27/pycharm-technique/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Latex-technique" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/09/18/Latex-technique/">Latex-technique</a>
+    </h1>
+  
+
+        
+        <a href="/2024/09/18/Latex-technique/" class="archive-article-date">
+  	<time datetime="2024-09-18T09:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-09-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-1-整体框架"><a href="#1-1-整体框架" class="headerlink" title="1.1 整体框架"></a>1.1 整体框架</h4><h5 id="1-1-1-声明类"><a href="#1-1-1-声明类" class="headerlink" title="1.1.1 声明类"></a>1.1.1 声明类</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br></pre></td></tr></table></figure>
+
+<p>文章编码：UF8<br>文章类型：中文</p>
+<p>还有一种方法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="1-1-2-导入包"><a href="#1-1-2-导入包" class="headerlink" title="1.1.2 导入包"></a>1.1.2 导入包</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\usepackage&#123;mathtools,wallpaper&#125;</span><br><span class="line"></span><br><span class="line">\usepackage&#123;t1enc&#125;</span><br><span class="line">\usepackage&#123;pagecolor&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以一次性导入全部宏，每个包之间用逗号分隔；也可以一行行导入，用到什么导什么。</p>
+<p>常用的宏包：<br>ctex：中文支持<br>amsmath：latex数学公式支持<br>graphicx：插入图片<br>algorithm和algorithmic：算法排版<br>listings：插入代码块<br>等等</p>
+<h5 id="1-1-3-环境"><a href="#1-1-3-环境" class="headerlink" title="1.1.3 环境"></a>1.1.3 环境</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;document&#125;</span><br><span class="line">	文章</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<p>文章的body</p>
+<h4 id="1-2-开始写文章"><a href="#1-2-开始写文章" class="headerlink" title="1.2 开始写文章"></a>1.2 开始写文章</h4><h5 id="1-2-1-maketitle"><a href="#1-2-1-maketitle" class="headerlink" title="1.2.1 maketitle"></a>1.2.1 maketitle</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\title&#123;标题\LaTeX&#125;  </span><br><span class="line">\author&#123;xxx&#125;</span><br><span class="line">\date&#123;62-50-0202&#125;</span><br><span class="line">\maketitle</span><br></pre></td></tr></table></figure>
+
+<p>运行效果<br><img src="https://i-blog.csdnimg.cn/blog_migrate/a9b4dc4e693c51c5c7e9aa3d40f4c544.png" alt="在这里插入图片描述"><br>注意：<br><code>\maketitle</code>一定要加上，不然显示不了<br><code>\date&#123;62-50-0202&#125;</code>可以不加，会默认显示写作时间，如果不想显示，直接<code>\date&#123;&#125;</code></p>
+<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>在<code>\maketitle</code>下添加内容，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\maketitle          %添加这一句才能够显示标题等信息</span><br><span class="line">%摘要开始部分</span><br><span class="line">\begin&#123;abstract&#125;</span><br><span class="line">该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。</span><br><span class="line">\end&#123;abstract&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="1-2-2-章节"><a href="#1-2-2-章节" class="headerlink" title="1.2.2 章节"></a>1.2.2 章节</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\section&#123;\LaTeX 的使用&#125;</span><br><span class="line">\subsection&#123;\LaTeX 的基本知识&#125;</span><br><span class="line">\subsubsection&#123;\LaTeX 的结构&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>\LaTeX</code>是属于LaTeX的一个特殊符号</p>
+<p>分章节，一般都是无脑sub,但是注意，最多到<code>\subsubsection</code>，没有<code>\subsubsubsection</code>,如果你还想在\subsubsection以下分段的话，只能选择<code>\paragraph</code>：</p>
+<h4 id="目录设置：在-begin-document-内容中添加：-tableofcontents"><a href="#目录设置：在-begin-document-内容中添加：-tableofcontents" class="headerlink" title="目录设置：在\begin{document}内容中添加：\tableofcontents"></a>目录设置：在<code>\begin&#123;document&#125;</code>内容中添加：<code>\tableofcontents</code></h4><h5 id="1-2-3-列表"><a href="#1-2-3-列表" class="headerlink" title="1.2.3 列表"></a>1.2.3 列表</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">接下来是列表：</span><br><span class="line">	\begin&#123;enumerate&#125;</span><br><span class="line">	\item 第一条</span><br><span class="line">	\item 第二条</span><br><span class="line">	\item 第三条</span><br><span class="line">	\end&#123;enumerate&#125;</span><br></pre></td></tr></table></figure>
+
+<p>和body最外面套的document环境一样，<code>\begin &#123;...&#125; \end&#123;...&#125;</code>把一段内容圈到对应环境里面,enumerate就表示列表（枚举）</p>
+<h5 id="1-2-4-换行"><a href="#1-2-4-换行" class="headerlink" title="1.2.4 换行"></a>1.2.4 换行</h5><p>想要达到两段文字之间换行的效果，两段文字之间必须要有一个空行</p>
+<h5 id="1-2-5-转义"><a href="#1-2-5-转义" class="headerlink" title="1.2.5 转义"></a>1.2.5 转义</h5><p>\ +”…”表示将某个字符转义为原来的样子显示，如<code>&#123;&#125;、&amp;</code>等具有特殊含义的字符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\verb|\|</span><br></pre></td></tr></table></figure>
+
+<p>要注意<code>\</code>这个符号的转义有点麻烦:</p>
+<h3 id="2-advanced"><a href="#2-advanced" class="headerlink" title="2. advanced"></a>2. advanced</h3><h4 id="2-1-字体"><a href="#2-1-字体" class="headerlink" title="2.1 字体"></a>2.1 字体</h4><h5 id="2-1-1-黑体"><a href="#2-1-1-黑体" class="headerlink" title="2.1.1 黑体"></a>2.1.1 黑体</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\textbf&#123;我黑了&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-2-字号"><a href="#2-1-2-字号" class="headerlink" title="2.1.2 字号"></a>2.1.2 字号</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;\normalsize 不大&#125;</span><br><span class="line">	</span><br><span class="line">&#123;\large 大&#125;</span><br><span class="line">	</span><br><span class="line">&#123;\Large 大大&#125;</span><br><span class="line">	</span><br><span class="line">&#123;\LARGE 大大大&#125;</span><br><span class="line">	</span><br><span class="line">&#123;\huge 大大大大&#125;</span><br><span class="line">	</span><br><span class="line">&#123;\Huge 大大大大大&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-3-字体"><a href="#2-1-3-字体" class="headerlink" title="2.1.3 字体"></a>2.1.3 字体</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;\songti 宋体&#125;</span><br><span class="line">&#123;\youyuan 幼圆&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-4-居中"><a href="#2-1-4-居中" class="headerlink" title="2.1.4 居中"></a>2.1.4 居中</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;center&#125;</span><br><span class="line">	居中</span><br><span class="line">\end&#123;center&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-目录"><a href="#2-2-目录" class="headerlink" title="2.2 目录"></a>2.2 目录</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> %%%要运行两次：第一次加载，第二次新增的条目才能显示</span><br><span class="line">\tableofcontents</span><br></pre></td></tr></table></figure>
+
+<p>目录会自动解析文章的section和列表，并动态标号</p>
+<h4 id="2-3-页"><a href="#2-3-页" class="headerlink" title="2.3 页"></a>2.3 页</h4><h5 id="2-3-1-另起一页"><a href="#2-3-1-另起一页" class="headerlink" title="2.3.1 另起一页"></a>2.3.1 另起一页</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">%%%想要另起一页</span><br><span class="line">\newpage</span><br><span class="line"></span><br><span class="line">%%%一般下面这种用的多</span><br><span class="line">\clearpage</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-3-2-页号"><a href="#2-3-2-页号" class="headerlink" title="2.3.2 页号"></a>2.3.2 页号</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\pagestyle&#123;empty&#125;%%整篇文章不显示</span><br><span class="line"></span><br><span class="line">\thispagestyle&#123;empty&#125;%%仅当前页</span><br><span class="line"></span><br><span class="line">\setcounter&#123;page&#125;&#123;1&#125;%%页号从正文开始</span><br></pre></td></tr></table></figure>
+
+<p>详细请百度</p>
+<h3 id="3-公式"><a href="#3-公式" class="headerlink" title="3. 公式"></a>3. 公式</h3><h4 id="3-1-普通公式"><a href="#3-1-普通公式" class="headerlink" title="3.1 普通公式"></a>3.1 普通公式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">girlfriends=money*face</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行效果：</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/4d6e0cc5098ff2a2e66cd716248e052e.png" alt="在这里插入图片描述"></p>
+<p>想要没有右边的标号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">girlfriends=money*face \notag</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>不仅可以直接<code>\notag</code>，上述这种没标号的，还可以有多种其他的写法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation*&#125;</span><br><span class="line">girlfriends=money*face</span><br><span class="line">\end&#123;equation*&#125;</span><br><span class="line">	</span><br><span class="line">\[</span><br><span class="line">girlfriends=money*face</span><br><span class="line">\]</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-换行公式"><a href="#3-2-换行公式" class="headerlink" title="3.2 换行公式"></a>3.2 换行公式</h4><p>普通公式在一个环境里不支持<code>\\</code>换行，需要用到<code>align</code>换行公式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">%换行公式</span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">girlfriends=money*face \notag \\ %%如果想要这一行没标号的话，notag要加在\\之前</span><br><span class="line">boyfriends=face^n </span><br><span class="line">\end&#123;align&#125;</span><br></pre></td></tr></table></figure>
+
+<p>还可以使用<code>&amp;</code>实现行间对齐：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;align&#125;</span><br><span class="line">&amp;girlfriends=money*face \notag \\ </span><br><span class="line">&amp;boyfriends=face^n </span><br><span class="line">\end&#123;align&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3-行内公式"><a href="#3-3-行内公式" class="headerlink" title="3.3 行内公式"></a>3.3 行内公式</h4><p>用<code>$ $</code>实现文字内部插入公式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是一个众所周知的定理：$girlfriends=money*face$，所以你只能在这里写博客</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注意的是，现在latex最好不要用<code>$ $</code>这种行内公式写法，最好使用<code>\( \)</code>的写法。同样行间公式也应该用<code>\[ \]</code>而不是<code>$$ $$</code></p>
+<h4 id="3-4-公式命令"><a href="#3-4-公式命令" class="headerlink" title="3.4 公式命令"></a>3.4 公式命令</h4><p><img src="https://i-blog.csdnimg.cn/blog_migrate/7b2284fbc07b7cc837ec0f791045cbb1.png" alt="在这里插入图片描述"></p>
+<h4 id="3-5-矩阵和大括号"><a href="#3-5-矩阵和大括号" class="headerlink" title="3.5 矩阵和大括号"></a>3.5 矩阵和大括号</h4><p>需要导入宏包<code>mathtools</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation*&#125;</span><br><span class="line">A=\begin&#123;bmatrix&#125;</span><br><span class="line">1&amp;2&amp;3\\</span><br><span class="line">4&amp;5&amp;6</span><br><span class="line">\end&#123;bmatrix&#125;</span><br><span class="line">\end&#123;equation*&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/2ada7645f42f9318e241f6f8453e273f.png" alt="在这里插入图片描述"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation*&#125;</span><br><span class="line">y=\begin&#123;cases&#125;</span><br><span class="line">&amp;\lambda e^&#123;-\lambda x&#125; \\</span><br><span class="line">&amp;0</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">\end&#123;equation*&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-表格"><a href="#4-表格" class="headerlink" title="4. 表格"></a>4. 表格</h3><h4 id="4-1-普通表格"><a href="#4-1-普通表格" class="headerlink" title="4.1 普通表格"></a>4.1 普通表格</h4><p>普通表格很好理解</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;tabular&#125;&#123;|l|c|r|&#125;</span><br><span class="line">\hline</span><br><span class="line">name&amp;money&amp;face\\</span><br><span class="line">\hline</span><br><span class="line">祖安少男&amp;0&amp;thick\\</span><br><span class="line">\hline</span><br><span class="line">\end&#123;tabular&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/4ba31f7b5c26dde2647aaf2754b7de3d.png" alt="在这里插入图片描述"></p>
+<p><code>&#123;|l|c|r|&#125;</code>指定了表格有3列，4条竖线<br>三个<code>\hline</code>指定了表格有2行，3条行线<br>各个行线之间为每一行内容，每一个属性用<code>&amp;</code>连接</p>
+<h5 id="4-2-三线表"><a href="#4-2-三线表" class="headerlink" title="4.2 三线表"></a>4.2 三线表</h5><p>三线表是paper里面常见的表格形式，也是很多表格变体的基础。<br>需要导入<code>booktabs</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;table&#125;[!htbp]</span><br><span class="line">	\centering</span><br><span class="line">	\caption&#123;b站最具有影响力的作者&#125;</span><br><span class="line">	\begin&#123;tabular&#125;&#123;ccc&#125;</span><br><span class="line">		\toprule</span><br><span class="line">		&amp;姓名&amp;著作\\</span><br><span class="line">		\midrule</span><br><span class="line">		top1&amp;小猪&amp;《时间管理与多人运动》\\</span><br><span class="line">		top2&amp;窃格瓦拉&amp;《下山:领袖归来》\\</span><br><span class="line">		\bottomrule</span><br><span class="line">	\end&#123;tabular&#125;</span><br><span class="line">\end&#123;table&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/8f89dd4e0c6fd5bbccd872fce54b0dc4.png" alt="在这里插入图片描述"></p>
+<p>其实细看三线表也是不难理解的，首先其最外面套的环境是{table}，可以把三线表看成是对普通{tabular}进行了封装。所以，\caption{}就是三线表额外附加在原先表格之上的标题，\centering表示居中。<br>其次，比较关键的点是{ccc}，它的含义就是表格有三列的意思，而且每一列的内容都是居中的。<br>然后不同于普通表格，普通表格的行之间用\hline分割。三线表顾名思义就只有三条行线：\toprule+\midrule+\bottomrule ，这个结构就非常清晰了。<br>三线表主要内容是在\midrule+\bottomrule 之间的，每个列属性之间依旧用&amp;连接.列属性也可以为空的。（如第一行）</p>
+<h3 id="5-标签与引用"><a href="#5-标签与引用" class="headerlink" title="5. 标签与引用"></a>5. 标签与引用</h3><p>当paper里面公式很多的时候，文中若想引用远处的某个公式，可以使用<code>\label&#123;&#125;</code>和<code>\ref&#123;&#125;</code>的组合。它能对某个公式、表格、图片指定一个名称，随后可以在文中任何地方引用这个名称。由于这种引用的组合会随着公式的标号的改变而及时变化，因此公式很多的时候会减轻很大的负担。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">	y=\sum^&#123;n&#125;_&#123;i=1&#125;x^&#123;2&#125;+1 \label&#123;eq:here&#125;  %%eq可以也换成tab（表）、fig（图）</span><br><span class="line">\end&#123;equation&#125;</span><br><span class="line">	</span><br><span class="line">我来引用(\ref&#123;eq:here&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/57e9b6c3677957e2778d3179bb0b7fd8.png" alt="在这里插入图片描述"></p>
+<h4 id="6-技巧"><a href="#6-技巧" class="headerlink" title="6 技巧"></a>6 技巧</h4><h3 id="首行缩进"><a href="#首行缩进" class="headerlink" title="首行缩进"></a>首行缩进</h3><h4 id="进行缩进"><a href="#进行缩进" class="headerlink" title="进行缩进"></a>进行缩进</h4><p>若LaTeX默认没有段首缩进，因此要首行缩进需要进行修改。在导言区加入如下代码（距离单位一般为<code>pt</code>或<code>em</code>，<code>pt</code>是绝对单位；<code>em</code>是相对单位，表示1个中文字符宽度；本人比较喜欢<code>em</code>）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% 使用indentfirst宏包</span><br><span class="line">\usepackage&#123;indentfirst&#125;</span><br><span class="line">% 设置首行缩进距离</span><br><span class="line">\setlength&#123;\parindent&#125;&#123;2em&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="不进行缩进"><a href="#不进行缩进" class="headerlink" title="不进行缩进"></a>不进行缩进</h4><p>若LaTeX已经是段首缩进的，因此要段首不进行缩进需要进行修改。</p>
+<p><strong>方式1（推荐）：</strong> 单段取消缩进，放在段首即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\noindent</span><br></pre></td></tr></table></figure>
+
+<p><strong>方式2：</strong> 全局取消缩进，在想缩进的段落再进行缩进。<br>放在导言区：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\setlength&#123;\parindent&#125;&#123;0pt&#125;</span><br></pre></td></tr></table></figure>
+
+<p>放在想要缩进的段落：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\hspace*&#123;2em&#125;段落\\</span><br></pre></td></tr></table></figure>
+
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>Overleaf等工具中可以使用快捷键<code>Ctrl+/</code>来批量注释或批量取消注释。</p>
+<h4 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">% 注释内容</span><br></pre></td></tr></table></figure>
+
+<p>方式1（推荐）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\iffalse</span><br><span class="line">注释内容</span><br><span class="line">\fi</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<p>方式2：<br>使用<code>\usepackage&#123;verbatim&#125;</code>宏包</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;comment&#125;</span><br><span class="line">注释内容</span><br><span class="line">\end&#123;comment&#125; </span><br></pre></td></tr></table></figure>
+
+<p>英文引号<br>在LaTeX中输入英文引号时，导出的PDF显示的是顺撇的，如下：</p>
+<p>代码：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x27;English&#x27;</span><br><span class="line"></span><br><span class="line">&#x27;&#x27;English&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>显示：</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/d29e424c7071faf291abdd38c81f5202.png" alt="在这里插入图片描述"></p>
+<p>要想正确输入英文引号，把左侧的引号用 &#96; 代替即可，如下：</p>
+<p>代码：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">`English&#x27;</span><br><span class="line"></span><br><span class="line">``English&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>显示：<br><img src="https://i-blog.csdnimg.cn/blog_migrate/29c080f321f400dd38e741a4834d769a.png" alt="在这里插入图片描述"></p>
+<h3 id="可选参数-htbp"><a href="#可选参数-htbp" class="headerlink" title="可选参数[htbp]"></a>可选参数[htbp]</h3><p>LaTeX插入图片、表格等元素时，第一行后面有一个可选参数<code>[htbp]</code>，例如，<code>\begin&#123;figure&#125;[htbp]</code>。</p>
+<p>[htbp]是个可选参数项，允许用户指定图片、表格等元素被放置的位置。这一可选参数项可以是下列字母的任意组合。</p>
+<p>h(here): 当前位置；将图形放置在 正文文本中给出该图形环境的地方。如果本页所剩的页面不够， 这一参数将不起作用。<br>t(top): 顶部；将图形放置在页面的顶部。<br>b(bottom): 底部；将图形放置在页面的底部。<br>p(page): 浮动页；将图形放置在一只允许有浮动对象的页面上。<br>注意：在使用这些参数时：</p>
+<ol>
+<li>如果在图形环境中没有给出上述任一参数，则缺省为 <code>[tbp]</code>。</li>
+<li>给出参数的顺序不会影响到最后的结果。因为在考虑这些参数时LaTeX总是尝试以 <code>h-t-b-p</code> 的顺序来确定图形的位置。所以 <code>[hb]</code> 和 <code>[bh]</code> 都以<code>h-b</code> 的顺序来排版。</li>
+<li>给出的参数越多，LaTeX的排版结果就会越好。<code>[htbp], [tbp], [htp], [tp]</code> 这些组合得到的效果不错，<code>[h]</code>也是常用的选择</li>
+</ol>
+<h3 id="引用、脚注"><a href="#引用、脚注" class="headerlink" title="引用、脚注"></a>引用、脚注</h3><p>引用：写在<code>\begin&#123;quote&#125;</code>和<code>\end&#123;quote&#125;</code>之间。<br>脚注：在需要添加脚注的文字后添加<code>\footnote&#123;脚注内容&#125;</code>即可。</p>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">西游记\footnote&#123;中国古典四大名著之一&#125;小说开头写道：</span><br><span class="line">\begin&#123;quote&#125;</span><br><span class="line">&#123;\kaishu 东胜神洲有一花果山，山顶一石，受日月精华，生出一石猴。之后因为成功闯入水帘洞，被花果山诸猴拜为“美猴王”。&#125;</span><br><span class="line">\end&#123;quote&#125;</span><br></pre></td></tr></table></figure>
+
+<p>显示</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/04545b613491aa492b626a0d83121ae0.png" alt="在这里插入图片描述"></p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/04545b613491aa492b626a0d83121ae0.png" alt="在这里插入图片描述"></p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>导入宏包：<code>\usepackage&#123;url&#125;</code><br>插入超链接：<code>\url&#123;www.baidu.com&#125;</code></p>
+<h2 id="算法（伪代码）"><a href="#算法（伪代码）" class="headerlink" title="算法（伪代码）"></a>算法（伪代码）</h2><p>需要使用<code>\usepackage&#123;algorithm&#125;</code>和<code>\usepackage&#123;algorithmic&#125;</code>宏包，<code>if</code>、<code>for</code>等关键字要按照规范书写，如<code>\IF \ENDIF</code>。</p>
+<p>代码块<br>基础用法<br>使用\usepackage{listings}宏包，并使用\lstset{}进行基础设置，然后使用\begin{lstlisting}[language&#x3D;xxx]和\end{lstlisting}插入代码块。</p>
+<p>基础设置包括行号，不显示字符串空格，代码块边框，不包含颜色等设置，要设置颜色和字体请见下文的高级用法。</p>
+<p>高级用法<br>使用\usepackage{listings}和\usepackage{xcolor}宏包，并使用\lstset{}进行高级设置，然后使用\begin{lstlisting}[language&#x3D;xxx]和\end{lstlisting}插入代码块。</p>
+<p>高级设置除基础设置外，还包括关键字格式，字符串格式等设置。</p>
+<h2 id="论文写作"><a href="#论文写作" class="headerlink" title="论文写作"></a>论文写作</h2><h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>论文写作可以使用合适的模板，例如<code>IEEE</code>的模板，只需在文档类型处修改即可，代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[conference]&#123;IEEEtran&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="双栏"><a href="#双栏" class="headerlink" title="双栏"></a>双栏</h3><p>更改文档的单双栏模式，只需更改文档类型处的选项即可，代码如下：<br>单栏：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[onecolumn]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+
+<p>双栏：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[twocolumn]&#123;article&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="跨栏图表"><a href="#跨栏图表" class="headerlink" title="跨栏图表"></a>跨栏图表</h3><p>在双栏编辑模式下，图片只能在一栏中显示，而且如果图片的宽度超过单栏文本宽度，则只能显示其中一部分，剩下的部分会溢出。</p>
+<p>若想在双栏模式下插入跨栏图表可将环境替换为带<code>*</code>的<code>figure</code>或<code>table</code>环境，代码如下：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure*&#125;</span><br><span class="line">……</span><br><span class="line"><span class="keyword">\end</span>&#123;figure*&#125;</span><br><span class="line">或</span><br><span class="line"><span class="keyword">\begin</span>&#123;talbe*&#125;</span><br><span class="line">……</span><br><span class="line"><span class="keyword">\end</span>&#123;table*&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="无自动编号的标题"><a href="#无自动编号的标题" class="headerlink" title="无自动编号的标题"></a>无自动编号的标题</h3><p>LaTeX中的标题都是自动编号的，若想使用无编号的标题，可使用带<code>*</code>的<code>section</code>代码，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\section*&#123;References&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>LaTeX中的公式，图表，参考文献都是自动编号的，添加<code>\label</code>语句后可以进行引用，还可以设置引用格式，使用方法如下：</p>
+<h4 id="公式引用"><a href="#公式引用" class="headerlink" title="公式引用"></a>公式引用</h4><p>需导入<code>amsmath</code>宏包，代码为<code>\usepackage&#123;amsmath&#125;</code>。</p>
+<p><strong>引用</strong></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Eq. (<span class="keyword">\ref</span>&#123;eq1&#125;)</span><br><span class="line">或导入amsmath宏包，使用如下代码（推荐）：</span><br><span class="line">Eq. <span class="keyword">\eqref</span>&#123;eq1&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h4><p>需导入<code>graphicx</code>宏包，代码为<code>\usepackage&#123;graphicx&#125;</code>。</p>
+<p><strong>引用</strong></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Fig. <span class="keyword">\ref</span>&#123;fig1&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="表格引用"><a href="#表格引用" class="headerlink" title="表格引用"></a>表格引用</h4><p><strong>引用</strong></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Table. <span class="keyword">\ref</span>&#123;tab1&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="页面内参考文献引用"><a href="#页面内参考文献引用" class="headerlink" title="页面内参考文献引用"></a>页面内参考文献引用</h4><p><strong>引用</strong></p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\cite</span>&#123;b1&#125;</span><br><span class="line"><span class="keyword">\cite</span>&#123;b2&#125;</span><br><span class="line"><span class="keyword">\cite</span>&#123;b3&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="bib参考文献引用"><a href="#bib参考文献引用" class="headerlink" title="bib参考文献引用"></a>bib参考文献引用</h4><p><strong>流程</strong></p>
+<ol>
+<li>在论文投稿官方网站上获取论文LaTeX模板，其中包含bib文件，可对bib文件重命名。</li>
+<li>在tex文件中找到bib文件声明位置，进行修改，若没有bib文件声明，则添加声明。</li>
+<li>在谷歌学术等文献检索网站上检索参考文献，在引用中复制<code>BibTeX</code>格式的代码，粘贴到bib文件的末尾。</li>
+<li>在tex文件中需要引用参考文献的位置使用<code>\cite&#123;BibTexName&#125;</code>语法进行引用，其中<code>BibTeXName</code>为<code>BibTeX</code>代码中的第一行的名称。</li>
+</ol>
+<p><strong>bib声明</strong><br>在<code>tex</code>文件中，结尾处，<code>\end&#123;document&#125;</code>之前，找到如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\bibliographystyle&#123;FormatName&#125;</span><br><span class="line">\bibliography&#123;BibName&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可进行修改，其中，<code>FormatName</code>为格式名称，<code>BibName</code>为bib文件名称。</p>
+<p>示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\bibliographystyle&#123;ACM-Reference-Format&#125;</span><br><span class="line">\bibliography&#123;ref&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>BibTeX代码</strong><br>在谷歌学术等文献检索软件中检索需要的参考文献，以<code>Conditional generative adversarial nets</code>为例，在文献处点击<code>引用</code>，选择<code>BibTeX</code>格式，如下图：</p>
+<p><img src="https://i-blog.csdnimg.cn/blog_migrate/fca90976b4271c4b9dbae0d94c383c40.png" alt="在这里插入图片描述"></p>
+<p>复制<code>BibTeX</code>代码，示例如下。将其粘贴到bib文件的末尾。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;mirza2014conditional,</span><br><span class="line">  title=&#123;Conditional generative adversarial nets&#125;,</span><br><span class="line">  author=&#123;Mirza, Mehdi and Osindero, Simon&#125;,</span><br><span class="line">  journal=&#123;arXiv preprint arXiv:1411.1784&#125;,</span><br><span class="line">  year=&#123;2014&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>引用</strong><br>在<code>tex</code>文件中，要引用参考文献时，使用<code>\cite&#123;&#125;</code>语法进行引用，中括号的内容为<code>BibTeX</code>代码的第一行内容。</p>
+<p>以上文的<code>BibTeX</code>为例，进行引用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Conditional GAN (CGAN) \cite&#123;mirza2014conditional&#125;.</span><br></pre></td></tr></table></figure>
+
+<h4 id="改变引用颜色"><a href="#改变引用颜色" class="headerlink" title="改变引用颜色"></a>改变引用颜色</h4><p>改变引用颜色前最好在导言区导入<code>xcolor</code>宏包，代码为<code>\usepackage&#123;xcolor&#125;</code>。</p>
+<p>改变引用颜色需要在导言区添加如下代码：</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>[colorlinks,bookmarksopen,bookmarksnumbered,citecolor=green, linkcolor=red, urlcolor=blue]&#123;</span><br></pre></td></tr></table></figure>
+
+<p><code>citecolor</code>为参考文献颜色，<code>linkcolor</code>为图表和公式引用的颜色，<code>urlcolor</code>为超链接颜色。各颜色可根据偏好或要求自行更改。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/09/18/Latex-technique/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Anaconda-technique" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/09/16/Anaconda-technique/">Anaconda-technique</a>
+    </h1>
+  
+
+        
+        <a href="/2024/09/16/Anaconda-technique/" class="archive-article-date">
+  	<time datetime="2024-09-16T01:43:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-09-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="查看虚拟环境"><a href="#查看虚拟环境" class="headerlink" title="查看虚拟环境"></a>查看虚拟环境</h3><p>conda env list</p>
+<h3 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h3><p>conda create -n 环境名 python&#x3D;版本号</p>
+<h3 id="创建指定虚拟环境的安装路径"><a href="#创建指定虚拟环境的安装路径" class="headerlink" title="创建指定虚拟环境的安装路径"></a>创建指定虚拟环境的安装路径</h3><p>conda create -p 绝对地址+环境ming python&#x3D;&#x3D;版本号</p>
+<h3 id="配置conda-config"><a href="#配置conda-config" class="headerlink" title="配置conda config"></a>配置conda config</h3><p>上述方法每次装环境还得显式地指定路径，非常不方便。所以可以更改conda config 一劳永逸：</p>
+<p>conda config –append envs_dirs 绝对地址（这样activate也就不用每次都写path了：）</p>
+<h3 id="删除虚拟环境"><a href="#删除虚拟环境" class="headerlink" title="删除虚拟环境"></a>删除虚拟环境</h3><p>conda remove -n 环境名 –all</p>
+<h3 id="添加pytorchcpu"><a href="#添加pytorchcpu" class="headerlink" title="添加pytorchcpu"></a>添加pytorchcpu</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pytorch torchvision torchaudio cpuonly -c pytorch</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加torch-geomettic"><a href="#添加torch-geomettic" class="headerlink" title="添加torch_geomettic"></a>添加torch_geomettic</h3><p>torch-2.4.0（cpu版本）</p>
+<p>pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f <a target="_blank" rel="noopener" href="https://data.pyg.org/whl/torch-2.4.0+cpu.html">https://data.pyg.org/whl/torch-2.4.0+cpu.html</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/09/16/Anaconda-technique/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-learning-note-summer-vacation" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -277,26 +923,64 @@
 <p>了解了注意力模型直觉（Attention model Intuition）（101）</p>
 <p>了解了CTCL（connectionist temporal classification）（102）</p>
 <p>了解了解发字检测（trigger wordDetection）（103）</p>
-<h1 id="近期总结"><a href="#近期总结" class="headerlink" title="近期总结"></a>近期总结</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p>1.1首先了解什么是深度学习然后引申了解了什么是神经网络，然后从监督学习入手，介绍了不同的神经网络类型，包括Standard NN，CNN和RNN。不同的神经网络模型适合处理不同类型的问题。对数据集本身来说，分为Structured Data和Unstructured Data。。最后明白了为什么要学习深度学习。最后，我们用一张对比图片解释了深度学习现在飞速发展、功能强大的原因。归纳其原因包含三点：Data，Computation和Algorithms。</p>
-<p>1.2以神经网络的基础（逻辑回归），出发了解了什么是二分类问题，以图片为例，将多维输入x转化为feature vector，接着，了解了逻辑回归及其对应的loss function和cost function，然后了解了梯度下降算法并了解了神经网络的正向传播和反向传播。最后，总结出最优化参数w和b的算法流程。</p>
-<p>1.3了解了神经网络基础（python和向量化）在深度学习程序中，使用向量化和矩阵运算的方法能够大大提高运行速度，节省时间。以逻辑回归为例，我们将其算法流程包括梯度下降转换为向量化的形式。同时，我们也介绍了python的相关编程方法和技巧。（广播机制）</p>
-<p>1.4了解了浅层神经网络，包括输入层，隐藏层和输出层，了解了其正向传播。接着，了解了不同的激活函数并做了比较，实际应用中根据不同需要选择合适的激活函数。激活函数必须是非线性的，不然神经网络模型起不了任何作用。然后，我们重点学习了神经网络的反向传播过程以及各个参数的导数推导，并以矩阵形式表示出来。最后，介绍了权重随机初始化的重要性，必须对权重W进行随机初始化操作。</p>
-<p>1.5首先，了解了建立神经网络模型一些常用的标准的标记符号。然后，学习了用流程块图的方式详细推导正向传播过程和反向传播过程的输入输出和参数表达式。并且也从提取特征复杂性和计算量的角度分别解释了深层神经网络为什么优于浅层神经网络。接着，了解了超参数的概念，了解了超参数与参数的区别。最后，学习了神经网络与人脑的区别类别，人工神经网络是简化的人脑模型。</p>
-<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p>1.1通过学习如何建立一个实用的深度学习神经网络。了解了包括Train&#x2F;Dev&#x2F;Test sets的比例选择，Bias和Variance的概念和区别：Bias对应欠拟合，Variance对应过拟合。接着，了解了防止过拟合的两种主要方法：L2 regularization和Dropout还有early stopping和增加数据集规模两种不够好的方法。然后，了解了规范化输入及其优点，加快梯度下降速度和精度。然后，了解梯度消失和梯度爆炸的概念和危害，并学习了如何使用梯度初始化来降低这种风险。最后，了解了梯度检查及其注意事项，其是用来验证梯度下降算法是否正确。</p>
-<p>1.2主要了解了深度神经网络的各种优化算法。包括对原始数据集进行分割，使用mini-batch gradient descent。然后了解了指数加权平均（Exponentially weighted averages）的概念以及偏移校正（bias correction）方法。接着，着重了解了三种常用的加速神经网络学习速度的三种算法：动量梯度下降、RMSprop和Adam算法。其中，Adam结合了动量梯度下降和RMSprop各自的优点，实际应用中表现更好。然后，了解了另外一种提高学习速度的方法：learning rate decay，通过不断减小学习因子，减小步进长度，来减小梯度振荡。最后，我们对深度学习中local optima的概念作了更深入的解释。</p>
-<p>1.3首先了解了超参数以及重要性差异，然后以此介绍了调试超参数的方法（均匀随机采样，非均匀随机采样（非刻度尺，将linear scale转换为log scale）），接下来介绍了调试超参数的模式（单模型还是多模型）。</p>
+<h1 id="近期总结"><a href="#近期总结" class="headerlink" title="近期总结"></a>近期总结</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p>1.1首先了解什么是深度学习然后引申了解了什么是神经网络.</p>
+<p>然后从监督学习入手，介绍了不同的神经网络类型，包括Standard NN，CNN和RNN。不同的神经网络模型适合处理不同类型的问题。对数据集本身来说，分为Structured Data和Unstructured Data。</p>
+<p>最后明白了为什么要学习深度学习。最后，我们用一张对比图片解释了深度学习现在飞速发展、功能强大的原因。归纳其原因包含三点：Data，Computation和Algorithms。</p>
+<p>1.2以神经网络的基础（逻辑回归），出发了解了什么是二分类问题，以图片为例，将多维输入x转化为feature vector，接着，了解了逻辑回归及其对应的loss function和cost function，然后了解了梯度下降算法并了解了神经网络的正向传播和反向传播。</p>
+<p>最后，总结出最优化参数w和b的算法流程。</p>
+<p>1.3了解了神经网络基础（python和向量化）在深度学习程序中，使用向量化和矩阵运算的方法能够大大提高运行速度，节省时间。以逻辑回归为例，我们将其算法流程包括梯度下降转换为向量化的形式。</p>
+<p>同时，我们也介绍了python的相关编程方法和技巧。（广播机制）</p>
+<p>1.4了解了浅层神经网络，包括输入层，隐藏层和输出层，了解了其正向传播。接着，了解了不同的激活函数并做了比较，实际应用中根据不同需要选择合适的激活函数。激活函数必须是非线性的，不然神经网络模型起不了任何作用。然后，我们重点学习了神经网络的反向传播过程以及各个参数的导数推导，并以矩阵形式表示出来。</p>
+<p>最后，介绍了权重随机初始化的重要性，必须对权重W进行随机初始化操作。</p>
+<p>1.5首先，了解了建立神经网络模型一些常用的标准的标记符号。</p>
+<p>然后，学习了用流程块图的方式详细推导正向传播过程和反向传播过程的输入输出和参数表达式。</p>
+<p>并且也从提取特征复杂性和计算量的角度分别解释了深层神经网络为什么优于浅层神经网络。</p>
+<p>接着，了解了超参数的概念，了解了超参数与参数的区别。最后，学习了神经网络与人脑的区别类别，人工神经网络是简化的人脑模型。</p>
+<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p>2.1通过学习如何建立一个实用的深度学习神经网络。了解了包括Train&#x2F;Dev&#x2F;Test sets的比例选择，Bias和Variance的概念和区别：Bias对应欠拟合，Variance对应过拟合。接着，了解了防止过拟合的两种主要方法：L2 regularization和Dropout还有early stopping和增加数据集规模两种不够好的方法。</p>
+<p>然后，了解了规范化输入及其优点，加快梯度下降速度和精度。</p>
+<p>然后，了解梯度消失和梯度爆炸的概念和危害，并学习了如何使用梯度初始化来降低这种风险。最后，了解了梯度检查及其注意事项，其是用来验证梯度下降算法是否正确。</p>
+<p>2.2主要了解了深度神经网络的各种优化算法。包括对原始数据集进行分割，使用mini-batch gradient descent。</p>
+<p>然后了解了指数加权平均（Exponentially weighted averages）的概念以及偏移校正（bias correction）方法。</p>
+<p>接着，着重了解了三种常用的加速神经网络学习速度的三种算法：动量梯度下降、RMSprop和Adam算法。其中，Adam结合了动量梯度下降和RMSprop各自的优点，实际应用中表现更好。</p>
+<p>然后，了解了另外一种提高学习速度的方法：learning rate decay，通过不断减小学习因子，减小步进长度，来减小梯度振荡。</p>
+<p>最后，我们对深度学习中local optima(局部最优解)的概念作了更深入的解释。</p>
+<p>2.3首先了解了超参数以及重要性差异，然后以此介绍了调试超参数的方法（均匀随机采样，非均匀随机采样（非刻度尺，将linear scale转换为log scale）），接下来介绍了调试超参数的模式（单模型还是多模型）。</p>
 <p>接下来了解了Bath Normalization方法研究公式（对第i层隐藏层的输入i-1层的输出进行归一化操作（可使各隐藏层输入的均值和方差为任意值）），了解了其的作用，然后介绍了单样本的特殊情况。</p>
 <p>接下来了解了softmax模型</p>
 <p>(softmax模型)逻辑回归模型的推广通过在<strong>输出层加入多个神经元</strong>，将单输出问题（二分类）映射到多输出问题（多分类）（预测正确值越小，loss function越大）<img src="C:\Users\走一回\AppData\Roaming\Typora\typora-user-images\image-20240914101518661.png" alt="image-20240914101518661">softmax的激活函数</p>
 <p>然后了解了一些深度学习框架</p>
-<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><p>1.1经过之前的学习，了解了许多改进深度学习的模型的方法，方法很多所以要选择性的选择，这就是机器学习策略的作用。</p>
+<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><p>3.1经过之前的学习，了解了许多改进深度学习的模型的方法，方法很多所以要选择性的选择，这就是机器学习策略的作用。</p>
 <p>学习了解了如（1）正交化Orthogonalization策略（2）单一数字评估指标策略（有公式）（3）满足和优化指标策略</p>
 <p>了解了人类表现水准的概念，并了解了贝叶斯误差，然后介绍了以贝叶斯误差、训练集误差、开发集误差3者之间的差距来确认偏差和方差。</p>
-<p>1.2了解了错误分析（error analysis）的重要性，利用错误分析找到主要问题，重点问题重点解决。</p>
+<p>3.2了解了错误分析（error analysis）的重要性，利用错误分析找到主要问题，重点问题重点解决。</p>
 <p>对于可能存在的样本分布吧一致问题，了解学习的问题的确认和解决方案。</p>
 <p><img src="https://img-blog.csdn.net/20171123102507240" alt="img"></p>
 <p>了解了迁移学习的概念和多任务学习的概念</p>
 <p>了解了end-to-end，端到端（end-to-end）深度学习就是将所有不同阶段的数据处理系统或学习系统模块组合在一起，用一个单一的神经网络模型来实现所有的功能。它将所有模块混合在一起，只关心输入和输出。</p>
+<h3 id="四"><a href="#四" class="headerlink" title="四"></a>四</h3><p>4.1了解了cV问题（深度学习的主要方向之一），然后通过指出标准神经网络处理cv问题存在的问题，了解了cnn。</p>
+<p>从边缘检测例子出发，了解了边缘检测，并引申出filter（过滤器）和卷积操作，并由Valid convolutions存在的不足引申出padding（填充）操作和same convulutions，然后介绍了stide（步长），最后以一个卷积神经网络的单层结构，介绍了卷积神经网络的符号与公式。</p>
+<p>以一个简单的cnn模型，了解了cnn的3种类型的layer，convulution层（卷积层），pooling层（池层），fully connected层（全连接层），并介绍了pooling层以及fc层与卷积层的不同以及各自的特点。（最大池）（平均池）（fc标准神经网络）</p>
+<p>最后了解的cnn参数少的原因。</p>
+<p>4.2了解了LeNet、VGG-16模型（典型神经网络）</p>
+<p>了解了ResNets.(我们知道，如果神经网络层数越多，网络越深，源于梯度消失和梯度爆炸的影响，整个模型难以训练成功。解决的方法之一是人为地让神经网络某些层跳过下一层神经元的连接，隔层相连，弱化每层之间的强联系。这种神经网络被称为Residual Networks(ResNets)。)。然后用个例子来解释为什么ResNets能够训练更深层的神经网络。ResNets同类型层之间，例如CONV layers，大多使用same类型，保持维度相同。如果是不同类型层之间的连接，例如CONV layer与POOL layer之间，如果维度不同，则引入矩阵W【s】W【s】。</p>
+<p>了解了Inception Network（与其它只选择单一尺寸和功能的filter不同，Inception Network使用不同尺寸的filters并将CONV和POOL混合起来，将所有功能输出组合拼接，再由神经网络本身去学习参数并选择最好的模块。）</p>
+<p>了解了数据增强（Data Augmentation）</p>
+<p>神经网络需要数据，不同的网络模型所需的数据量是不同的。Object dection，Image recognition，Speech recognition所需的数据量依次增加。一般来说，如果data较少，那么就需要更多的hand-engineering，对已有data进行处理，比如上一节介绍的data augmentation。模型算法也会相对要复杂一些。如果data很多，可以构建深层神经网络，不需要太多的hand-engineering，模型算法也就相对简单一些。<br>4.3了解了目标地位和目标检测，并了解了滑动窗算法。滑动窗口算法有时会出现滑动窗不能完全涵盖目标的问题，并引申了解了YOLO算法和Region proposal算法（没有YOLO好）,(YOLO（You Only Look Once）算法可以解决这类问题，生成更加准确的目标区域).并提出了IoU，即交集与并集之比，可以用来评价目标检测区域的准确性。region proposal具体做法是先对原始图片进行分割算法处理，然后支队分割后的图片中的块进行目标检测。</p>
+<p>4.4简单了解了人脸验证和人脸识别及其区别，然后了解了One Shot learning方法（单照片），应其存在许多问题，了解了相似函数d（1，2）【照片1和2的差异大小】。</p>
+<p>若一张图片经过一般的CNN网络（包括CONV层、POOL层、FC层），最终得到全连接层FC，该FC层可以看成是原始图片的编码encoding，表征了原始图片的关键特征。这个网络结构我们称之为Siamese network。</p>
+<p>构建人脸识别的CNN模型，需要定义合适的损失函数，这里我们将引入Triplet Loss（以及类似功能的两个siamese网络组合）。Triplet Loss需要每个样本包含三张图片：靶目标（Anchor）、正例（Positive）、反例（Negative），这就是triplet名称的由来。为了减少计算量，可以使用预计算的方式在训练时就将数据库每个模板的编码层输出保存下来。</p>
+<p>神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得不断减小，从而使G逐渐有C的内容和G的风格。并了解其特有损失函数，并了解了风格函数（风格矩阵）【风格迁移的损失函数包含两个部分】</p>
+<p>了解了1D到3D卷积规则.</p>
+<h3 id="五"><a href="#五" class="headerlink" title="五"></a>五</h3><p>5.1了解了序列模型的应用方向，以命名实体识别为例，介绍序列模型的命名规则，并指出了SNN的不足，并提出了RNN，了解了其公式及反向传播和损失函数。</p>
+<p>了解了语言模型，了解了采样新的序列。</p>
+<p>了解了RNN的梯度消失和梯度爆炸以及其特殊解决方法gradient clipping【Gated Recurrent Unit（GRU），LSTM】</p>
+<p>了解了 Bidirectional RNN（双向RNN），了解了深层RNNs</p>
+<p>5.2了解了特征表征（Featurized representation）的方法，其特征化单词的操作被称为Word Embeddings，即单词嵌入。了解了单词嵌入的优点。</p>
+<p>了解了context和target的选择方法以及Skip-Gram模型，然后了解了其经过softmax单元的输出公式以及loss function【实际应用中，一般不选择随机均匀采样的方式来选择context，而是使用其它算法来处理这类问题。】。接着了解了Negative sampling模型。接着了解了GloVe算法。【最后提一点的是，无论使用Skip-Gram模型还是GloVe模型等等，计算得到的embedding matrix EE的每一个特征值不一定对应有实际物理意义的特征值，如gender，age等。】</p>
+<p>了解了情感分类以及单词中立化。</p>
+<p>5.3从基础的序列模型开始（“编码网络（encoder network）”+“解码网络（decoder network）”的模型）（<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Sequence&spm=1001.2101.3001.7020">Sequence</a> to sequence（序列）模型），然后了解了（Greedy search）贪婪搜索来进行优化，再点明贪婪搜索的不足提出了Beam Search（对于其中存在的问题，提出了取对数运算和长度归一化）（了解了其错误分析的方法），了解了Bleu Score。</p>
+<p>对于长语句翻译存在的问题。提出了注意力模型（attention model）</p>
+<p>了解了语音识别，了解了触发字检测（Trigger Word Detection）。</p>
 
       
 
@@ -372,6 +1056,14 @@
 <p>方法（论文的重点，基本的公式要了解，看不懂去自己解决b站，csdn）（理解核心思想）</p>
 <p>实验看一下，别人怎么做的</p>
 <p>记录对方法的总结（印证）</p>
+<p>调研</p>
+<p>相关工作（多模态情感识别（背景与意义，总结），数据集（RNN，transformer，gcn），工作内容）举例，（人工化）Garmmerly</p>
+<p>基础性的东西加进去</p>
+<p>专有名词缩写（后面就缩写）</p>
+<h3 id="检索文章的能力-高质量"><a href="#检索文章的能力-高质量" class="headerlink" title="检索文章的能力(高质量)"></a>检索文章的能力(高质量)</h3><p>了解一下期刊和会议</p>
+<p>和数据集相关的（,）</p>
+<p>GBT没有总结，就看摘要</p>
+<p>问题，新的方法</p>
 
       
 
@@ -434,7 +1126,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>数据集</p>
+<p>IEMOCAP 全称 the Interactive Emotional Dyadic Motion Capture，是一个多模态情绪识别数据集</p>
+
       
 
       
@@ -693,268 +1387,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2024/04/25/Markdown/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-I-O流的体系" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">I/O流的体系</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/" class="archive-article-date">
-  	<time datetime="2024-04-25T13:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/25/I-O%E6%B5%81%E7%9A%84%E4%BD%93%E7%B3%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-idea使用技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">idea使用技巧</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="archive-article-date">
-  	<time datetime="2024-04-23T13:42:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Girl g=new Girl();</span><br><span class="line">Cat c=new Cat();</span><br><span class="line">g.play(c);</span><br></pre></td></tr></table></figure>
-
-<p>常用快捷键：<br>main方法快捷键：psvm+回车<br>控制台原样输出：sout+回车<br>删除一行：ctrl+y<br>复制一行：ctrl+d<br>单行注释：&#x2F;&#x2F;<br>多行注释：&#x2F;<em>+回车<br>文档注释：&#x2F;</em>* +回车</p>
-<p>再idea中选择内容然后按：ctrl+&#x2F;就可以将所选中的内容全部单行注释</p>
-<p>构造器的快速添加快捷键：alt+insert-》构造器-》选择属性<br>赋值与显示的快速添加快捷键：alt+insert-》Getter and Setter-》选择属性<br>按ctrl点击方法会进行跳转</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/23/idea%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexoquestion" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/19/hexoquestion/">hexoquestion</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/19/hexoquestion/" class="archive-article-date">
-  	<time datetime="2024-04-19T14:44:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo出现的问题"><a href="#hexo出现的问题" class="headerlink" title="hexo出现的问题"></a>hexo出现的问题</h1><p>1 **Spawn failed at ChildProcess.&lt;anonymous**&gt; </p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/V9Juu">解决链接</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/19/hexoquestion/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-surroundings" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/19/surroundings/">surroundings</a>
-    </h1>
-  
-
-        
-        <a href="/2024/04/19/surroundings/" class="archive-article-date">
-  	<time datetime="2024-04-19T14:11:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="各种工作环境安装配置使用链接"><a href="#各种工作环境安装配置使用链接" class="headerlink" title="各种工作环境安装配置使用链接"></a>各种工作环境安装配置使用链接</h1><h2 id="idea及其相关"><a href="#idea及其相关" class="headerlink" title="idea及其相关"></a>idea及其相关</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea"></a>idea</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/niIZK">2020idea的下载、安装、配置与使用</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/hePAv">jdk11 下载与安装、环境配置</a></p>
-<h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/BeTN7">mysql基本操作详解</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/NSoN9">使用IDEA连接Mysql数据库</a></p>
-<h3 id="Navicat"><a href="#Navicat" class="headerlink" title="Navicat"></a>Navicat</h3><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/YRWnh">Navicat安装和激活详细讲解</a></p>
-<h2 id="Eclipse"><a href="#Eclipse" class="headerlink" title="Eclipse"></a>Eclipse</h2><p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/W4AJ4">Eclipse从安装、配置、使用、到常见问题以及常用快捷键</a></p>
-<p><a target="_blank" rel="noopener" href="http://t.csdnimg.cn/ulIMW">Eclipse使用入门</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/04/19/surroundings/">展开全文 >></a>
         </p>
       
 

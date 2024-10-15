@@ -18,7 +18,7 @@
 <meta property="og:image" content="c:\Users\%E8%B5%B0%E4%B8%80%E5%9B%9E\AppData\Roaming\Typora\typora-user-images\image-20240914101518661.png">
 <meta property="og:image" content="https://img-blog.csdn.net/20171123102507240">
 <meta property="article:published_time" content="2024-09-13T13:45:24.000Z">
-<meta property="article:modified_time" content="2024-09-14T03:34:52.405Z">
+<meta property="article:modified_time" content="2024-09-18T07:07:53.312Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:\Users\%E8%B5%B0%E4%B8%80%E5%9B%9E\AppData\Roaming\Typora\typora-user-images\image-20240914101518661.png">
@@ -282,26 +282,64 @@
 <p>了解了注意力模型直觉（Attention model Intuition）（101）</p>
 <p>了解了CTCL（connectionist temporal classification）（102）</p>
 <p>了解了解发字检测（trigger wordDetection）（103）</p>
-<h1 id="近期总结"><a href="#近期总结" class="headerlink" title="近期总结"></a>近期总结</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p>1.1首先了解什么是深度学习然后引申了解了什么是神经网络，然后从监督学习入手，介绍了不同的神经网络类型，包括Standard NN，CNN和RNN。不同的神经网络模型适合处理不同类型的问题。对数据集本身来说，分为Structured Data和Unstructured Data。。最后明白了为什么要学习深度学习。最后，我们用一张对比图片解释了深度学习现在飞速发展、功能强大的原因。归纳其原因包含三点：Data，Computation和Algorithms。</p>
-<p>1.2以神经网络的基础（逻辑回归），出发了解了什么是二分类问题，以图片为例，将多维输入x转化为feature vector，接着，了解了逻辑回归及其对应的loss function和cost function，然后了解了梯度下降算法并了解了神经网络的正向传播和反向传播。最后，总结出最优化参数w和b的算法流程。</p>
-<p>1.3了解了神经网络基础（python和向量化）在深度学习程序中，使用向量化和矩阵运算的方法能够大大提高运行速度，节省时间。以逻辑回归为例，我们将其算法流程包括梯度下降转换为向量化的形式。同时，我们也介绍了python的相关编程方法和技巧。（广播机制）</p>
-<p>1.4了解了浅层神经网络，包括输入层，隐藏层和输出层，了解了其正向传播。接着，了解了不同的激活函数并做了比较，实际应用中根据不同需要选择合适的激活函数。激活函数必须是非线性的，不然神经网络模型起不了任何作用。然后，我们重点学习了神经网络的反向传播过程以及各个参数的导数推导，并以矩阵形式表示出来。最后，介绍了权重随机初始化的重要性，必须对权重W进行随机初始化操作。</p>
-<p>1.5首先，了解了建立神经网络模型一些常用的标准的标记符号。然后，学习了用流程块图的方式详细推导正向传播过程和反向传播过程的输入输出和参数表达式。并且也从提取特征复杂性和计算量的角度分别解释了深层神经网络为什么优于浅层神经网络。接着，了解了超参数的概念，了解了超参数与参数的区别。最后，学习了神经网络与人脑的区别类别，人工神经网络是简化的人脑模型。</p>
-<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p>1.1通过学习如何建立一个实用的深度学习神经网络。了解了包括Train&#x2F;Dev&#x2F;Test sets的比例选择，Bias和Variance的概念和区别：Bias对应欠拟合，Variance对应过拟合。接着，了解了防止过拟合的两种主要方法：L2 regularization和Dropout还有early stopping和增加数据集规模两种不够好的方法。然后，了解了规范化输入及其优点，加快梯度下降速度和精度。然后，了解梯度消失和梯度爆炸的概念和危害，并学习了如何使用梯度初始化来降低这种风险。最后，了解了梯度检查及其注意事项，其是用来验证梯度下降算法是否正确。</p>
-<p>1.2主要了解了深度神经网络的各种优化算法。包括对原始数据集进行分割，使用mini-batch gradient descent。然后了解了指数加权平均（Exponentially weighted averages）的概念以及偏移校正（bias correction）方法。接着，着重了解了三种常用的加速神经网络学习速度的三种算法：动量梯度下降、RMSprop和Adam算法。其中，Adam结合了动量梯度下降和RMSprop各自的优点，实际应用中表现更好。然后，了解了另外一种提高学习速度的方法：learning rate decay，通过不断减小学习因子，减小步进长度，来减小梯度振荡。最后，我们对深度学习中local optima的概念作了更深入的解释。</p>
-<p>1.3首先了解了超参数以及重要性差异，然后以此介绍了调试超参数的方法（均匀随机采样，非均匀随机采样（非刻度尺，将linear scale转换为log scale）），接下来介绍了调试超参数的模式（单模型还是多模型）。</p>
+<h1 id="近期总结"><a href="#近期总结" class="headerlink" title="近期总结"></a>近期总结</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p>1.1首先了解什么是深度学习然后引申了解了什么是神经网络.</p>
+<p>然后从监督学习入手，介绍了不同的神经网络类型，包括Standard NN，CNN和RNN。不同的神经网络模型适合处理不同类型的问题。对数据集本身来说，分为Structured Data和Unstructured Data。</p>
+<p>最后明白了为什么要学习深度学习。最后，我们用一张对比图片解释了深度学习现在飞速发展、功能强大的原因。归纳其原因包含三点：Data，Computation和Algorithms。</p>
+<p>1.2以神经网络的基础（逻辑回归），出发了解了什么是二分类问题，以图片为例，将多维输入x转化为feature vector，接着，了解了逻辑回归及其对应的loss function和cost function，然后了解了梯度下降算法并了解了神经网络的正向传播和反向传播。</p>
+<p>最后，总结出最优化参数w和b的算法流程。</p>
+<p>1.3了解了神经网络基础（python和向量化）在深度学习程序中，使用向量化和矩阵运算的方法能够大大提高运行速度，节省时间。以逻辑回归为例，我们将其算法流程包括梯度下降转换为向量化的形式。</p>
+<p>同时，我们也介绍了python的相关编程方法和技巧。（广播机制）</p>
+<p>1.4了解了浅层神经网络，包括输入层，隐藏层和输出层，了解了其正向传播。接着，了解了不同的激活函数并做了比较，实际应用中根据不同需要选择合适的激活函数。激活函数必须是非线性的，不然神经网络模型起不了任何作用。然后，我们重点学习了神经网络的反向传播过程以及各个参数的导数推导，并以矩阵形式表示出来。</p>
+<p>最后，介绍了权重随机初始化的重要性，必须对权重W进行随机初始化操作。</p>
+<p>1.5首先，了解了建立神经网络模型一些常用的标准的标记符号。</p>
+<p>然后，学习了用流程块图的方式详细推导正向传播过程和反向传播过程的输入输出和参数表达式。</p>
+<p>并且也从提取特征复杂性和计算量的角度分别解释了深层神经网络为什么优于浅层神经网络。</p>
+<p>接着，了解了超参数的概念，了解了超参数与参数的区别。最后，学习了神经网络与人脑的区别类别，人工神经网络是简化的人脑模型。</p>
+<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p>2.1通过学习如何建立一个实用的深度学习神经网络。了解了包括Train&#x2F;Dev&#x2F;Test sets的比例选择，Bias和Variance的概念和区别：Bias对应欠拟合，Variance对应过拟合。接着，了解了防止过拟合的两种主要方法：L2 regularization和Dropout还有early stopping和增加数据集规模两种不够好的方法。</p>
+<p>然后，了解了规范化输入及其优点，加快梯度下降速度和精度。</p>
+<p>然后，了解梯度消失和梯度爆炸的概念和危害，并学习了如何使用梯度初始化来降低这种风险。最后，了解了梯度检查及其注意事项，其是用来验证梯度下降算法是否正确。</p>
+<p>2.2主要了解了深度神经网络的各种优化算法。包括对原始数据集进行分割，使用mini-batch gradient descent。</p>
+<p>然后了解了指数加权平均（Exponentially weighted averages）的概念以及偏移校正（bias correction）方法。</p>
+<p>接着，着重了解了三种常用的加速神经网络学习速度的三种算法：动量梯度下降、RMSprop和Adam算法。其中，Adam结合了动量梯度下降和RMSprop各自的优点，实际应用中表现更好。</p>
+<p>然后，了解了另外一种提高学习速度的方法：learning rate decay，通过不断减小学习因子，减小步进长度，来减小梯度振荡。</p>
+<p>最后，我们对深度学习中local optima(局部最优解)的概念作了更深入的解释。</p>
+<p>2.3首先了解了超参数以及重要性差异，然后以此介绍了调试超参数的方法（均匀随机采样，非均匀随机采样（非刻度尺，将linear scale转换为log scale）），接下来介绍了调试超参数的模式（单模型还是多模型）。</p>
 <p>接下来了解了Bath Normalization方法研究公式（对第i层隐藏层的输入i-1层的输出进行归一化操作（可使各隐藏层输入的均值和方差为任意值）），了解了其的作用，然后介绍了单样本的特殊情况。</p>
 <p>接下来了解了softmax模型</p>
 <p>(softmax模型)逻辑回归模型的推广通过在<strong>输出层加入多个神经元</strong>，将单输出问题（二分类）映射到多输出问题（多分类）（预测正确值越小，loss function越大）<img src="C:\Users\走一回\AppData\Roaming\Typora\typora-user-images\image-20240914101518661.png" alt="image-20240914101518661">softmax的激活函数</p>
 <p>然后了解了一些深度学习框架</p>
-<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><p>1.1经过之前的学习，了解了许多改进深度学习的模型的方法，方法很多所以要选择性的选择，这就是机器学习策略的作用。</p>
+<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><p>3.1经过之前的学习，了解了许多改进深度学习的模型的方法，方法很多所以要选择性的选择，这就是机器学习策略的作用。</p>
 <p>学习了解了如（1）正交化Orthogonalization策略（2）单一数字评估指标策略（有公式）（3）满足和优化指标策略</p>
 <p>了解了人类表现水准的概念，并了解了贝叶斯误差，然后介绍了以贝叶斯误差、训练集误差、开发集误差3者之间的差距来确认偏差和方差。</p>
-<p>1.2了解了错误分析（error analysis）的重要性，利用错误分析找到主要问题，重点问题重点解决。</p>
+<p>3.2了解了错误分析（error analysis）的重要性，利用错误分析找到主要问题，重点问题重点解决。</p>
 <p>对于可能存在的样本分布吧一致问题，了解学习的问题的确认和解决方案。</p>
 <p><img src="https://img-blog.csdn.net/20171123102507240" alt="img"></p>
 <p>了解了迁移学习的概念和多任务学习的概念</p>
 <p>了解了end-to-end，端到端（end-to-end）深度学习就是将所有不同阶段的数据处理系统或学习系统模块组合在一起，用一个单一的神经网络模型来实现所有的功能。它将所有模块混合在一起，只关心输入和输出。</p>
+<h3 id="四"><a href="#四" class="headerlink" title="四"></a>四</h3><p>4.1了解了cV问题（深度学习的主要方向之一），然后通过指出标准神经网络处理cv问题存在的问题，了解了cnn。</p>
+<p>从边缘检测例子出发，了解了边缘检测，并引申出filter（过滤器）和卷积操作，并由Valid convolutions存在的不足引申出padding（填充）操作和same convulutions，然后介绍了stide（步长），最后以一个卷积神经网络的单层结构，介绍了卷积神经网络的符号与公式。</p>
+<p>以一个简单的cnn模型，了解了cnn的3种类型的layer，convulution层（卷积层），pooling层（池层），fully connected层（全连接层），并介绍了pooling层以及fc层与卷积层的不同以及各自的特点。（最大池）（平均池）（fc标准神经网络）</p>
+<p>最后了解的cnn参数少的原因。</p>
+<p>4.2了解了LeNet、VGG-16模型（典型神经网络）</p>
+<p>了解了ResNets.(我们知道，如果神经网络层数越多，网络越深，源于梯度消失和梯度爆炸的影响，整个模型难以训练成功。解决的方法之一是人为地让神经网络某些层跳过下一层神经元的连接，隔层相连，弱化每层之间的强联系。这种神经网络被称为Residual Networks(ResNets)。)。然后用个例子来解释为什么ResNets能够训练更深层的神经网络。ResNets同类型层之间，例如CONV layers，大多使用same类型，保持维度相同。如果是不同类型层之间的连接，例如CONV layer与POOL layer之间，如果维度不同，则引入矩阵W【s】W【s】。</p>
+<p>了解了Inception Network（与其它只选择单一尺寸和功能的filter不同，Inception Network使用不同尺寸的filters并将CONV和POOL混合起来，将所有功能输出组合拼接，再由神经网络本身去学习参数并选择最好的模块。）</p>
+<p>了解了数据增强（Data Augmentation）</p>
+<p>神经网络需要数据，不同的网络模型所需的数据量是不同的。Object dection，Image recognition，Speech recognition所需的数据量依次增加。一般来说，如果data较少，那么就需要更多的hand-engineering，对已有data进行处理，比如上一节介绍的data augmentation。模型算法也会相对要复杂一些。如果data很多，可以构建深层神经网络，不需要太多的hand-engineering，模型算法也就相对简单一些。<br>4.3了解了目标地位和目标检测，并了解了滑动窗算法。滑动窗口算法有时会出现滑动窗不能完全涵盖目标的问题，并引申了解了YOLO算法和Region proposal算法（没有YOLO好）,(YOLO（You Only Look Once）算法可以解决这类问题，生成更加准确的目标区域).并提出了IoU，即交集与并集之比，可以用来评价目标检测区域的准确性。region proposal具体做法是先对原始图片进行分割算法处理，然后支队分割后的图片中的块进行目标检测。</p>
+<p>4.4简单了解了人脸验证和人脸识别及其区别，然后了解了One Shot learning方法（单照片），应其存在许多问题，了解了相似函数d（1，2）【照片1和2的差异大小】。</p>
+<p>若一张图片经过一般的CNN网络（包括CONV层、POOL层、FC层），最终得到全连接层FC，该FC层可以看成是原始图片的编码encoding，表征了原始图片的关键特征。这个网络结构我们称之为Siamese network。</p>
+<p>构建人脸识别的CNN模型，需要定义合适的损失函数，这里我们将引入Triplet Loss（以及类似功能的两个siamese网络组合）。Triplet Loss需要每个样本包含三张图片：靶目标（Anchor）、正例（Positive）、反例（Negative），这就是triplet名称的由来。为了减少计算量，可以使用预计算的方式在训练时就将数据库每个模板的编码层输出保存下来。</p>
+<p>神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得不断减小，从而使G逐渐有C的内容和G的风格。并了解其特有损失函数，并了解了风格函数（风格矩阵）【风格迁移的损失函数包含两个部分】</p>
+<p>了解了1D到3D卷积规则.</p>
+<h3 id="五"><a href="#五" class="headerlink" title="五"></a>五</h3><p>5.1了解了序列模型的应用方向，以命名实体识别为例，介绍序列模型的命名规则，并指出了SNN的不足，并提出了RNN，了解了其公式及反向传播和损失函数。</p>
+<p>了解了语言模型，了解了采样新的序列。</p>
+<p>了解了RNN的梯度消失和梯度爆炸以及其特殊解决方法gradient clipping【Gated Recurrent Unit（GRU），LSTM】</p>
+<p>了解了 Bidirectional RNN（双向RNN），了解了深层RNNs</p>
+<p>5.2了解了特征表征（Featurized representation）的方法，其特征化单词的操作被称为Word Embeddings，即单词嵌入。了解了单词嵌入的优点。</p>
+<p>了解了context和target的选择方法以及Skip-Gram模型，然后了解了其经过softmax单元的输出公式以及loss function【实际应用中，一般不选择随机均匀采样的方式来选择context，而是使用其它算法来处理这类问题。】。接着了解了Negative sampling模型。接着了解了GloVe算法。【最后提一点的是，无论使用Skip-Gram模型还是GloVe模型等等，计算得到的embedding matrix EE的每一个特征值不一定对应有实际物理意义的特征值，如gender，age等。】</p>
+<p>了解了情感分类以及单词中立化。</p>
+<p>5.3从基础的序列模型开始（“编码网络（encoder network）”+“解码网络（decoder network）”的模型）（<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Sequence&spm=1001.2101.3001.7020">Sequence</a> to sequence（序列）模型），然后了解了（Greedy search）贪婪搜索来进行优化，再点明贪婪搜索的不足提出了Beam Search（对于其中存在的问题，提出了取对数运算和长度归一化）（了解了其错误分析的方法），了解了Bleu Score。</p>
+<p>对于长语句翻译存在的问题。提出了注意力模型（attention model）</p>
+<p>了解了语音识别，了解了触发字检测（Trigger Word Detection）。</p>
 
       
 
@@ -394,6 +432,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2024/09/16/Anaconda-technique/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Anaconda-technique
+        
+      </div>
+    </a>
   
   
     <a href="/2024/09/13/read-technique/" id="article-nav-older" class="article-nav-link-wrap">
